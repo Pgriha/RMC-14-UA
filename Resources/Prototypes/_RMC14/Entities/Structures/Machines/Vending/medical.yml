@@ -88,7 +88,7 @@
         amount: 10
 #      - id: CMSplints10 # TODO RMC14
 #        amount: 10
-    - name: Автоінжектори
+    - name: Автоін'єктори
       entries:
       - id: CMBicaridineAutoInjector
         amount: 5
@@ -375,7 +375,7 @@
   - type: CMAutomatedVendor
     canManualRestock: true
     sections:
-    - name: Автоінжектори
+    - name: Автоін'єктори
       entries:
       - id: CMTricordrazineAutoInjectorNoSkill
         amount: 5
