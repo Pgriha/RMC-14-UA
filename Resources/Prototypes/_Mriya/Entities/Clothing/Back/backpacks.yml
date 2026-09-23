@@ -22,11 +22,11 @@
       - RMCFoldingBarricadeStack
   - type: LimitedStorage
     limits:
-    - popup: rmc-storage-limit-one-bulletbox-smartgun
+    - popup: mriya-storage-limit-one-bulletbox-smartgun
       whitelist:
         tags:
         - MRBulletBoxSmartGun
-    - popup: rmc-storage-limit-not-flarebox
+    - popup: mriya-storage-limit-not-flarebox
       blacklist:
         tags:
         - MRFlareBox

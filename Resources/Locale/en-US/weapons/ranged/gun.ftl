@@ -45,7 +45,7 @@ gun-chamber-bolt-open-state = закрито
 gun-chamber-rack = Пересмикнути
 
 # MagazineAmmoProvider
-gun-magazine-examine = Це має зарядженими ще [color={$color}]{$count}[/color] куль.
+gun-magazine-examine = Це має зарядженими ще [color={$color}]{$count}[/color] снарядів.
 
 # RevolverAmmoProvider
 gun-revolver-empty = Спорожнити
