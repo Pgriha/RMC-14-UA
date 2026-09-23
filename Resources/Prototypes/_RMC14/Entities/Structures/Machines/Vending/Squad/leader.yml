@@ -186,10 +186,10 @@
       entries:
       - id: RMCTankFlamer
         points: 3
-        name: incinerator tank (UT-Napthal)
+        name: М34 паливний бак (УТ-Нафтал)
       - id: RMCTankFlamerBGel
         points: 3
-        name: incinerator tank (B-Gel)
+        name: М34 паливний бак (Бі-Гель)
     - name: Додаткова Зброя
       entries:
       - id: RMCCaseFlamer
