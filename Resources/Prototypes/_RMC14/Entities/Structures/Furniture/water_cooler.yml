@@ -23,7 +23,7 @@
         mask:
         - MachineMask
         layer:
-        - MobMask
+        - MachineLayer # Mriya. MobMask в оригіналі. Фікс колізії для будівництва на ньому
         - BulletImpassable
   - type: Appearance
   - type: SolutionContainerManager

@@ -2,13 +2,16 @@
   parent: BaseItem
   id: RMCParasiteProp
   name: "????"
-  description: Це якась дивна крабоподібна істота з трубкою на хвості. Що це, чорт забирай, таке??
+  description: Це якась дивна крабоподібна істота з трубкою на хвості. Виглядає давно висохлим. Що це, чорт забирай, таке??
   components:
   - type: Transform
     anchored: false
-#  - type: Physics – Mriya. Щоб можна було тягати
-#    bodyType: Static
-#    canCollide: false
+  # Mriya start. Щоб можна було тягати
+    noRot: true
+  #- type: Physics
+  #  bodyType: Static
+  #  canCollide: false
+  # Mriya end
   - type: Sprite
     sprite:  _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
     state: impregnated

@@ -64,7 +64,7 @@
         RMCSkillFirearms: 2
         RMCSkillFireman: 2
         RMCSkillIntel: 2
-        RMCSkillJtac: 3
+        RMCSkillJtac: 4 # Mriya. 3 в оригіналі
         RMCSkillLeadership: 2
         RMCSkillMedical: 3
         RMCSkillOverwatch: 1

@@ -1,7 +1,7 @@
 ﻿- type: entity
-  parent: RMCSentryPremade
+  parent: RMCBaseTurret
   id: RMCTurretAlmayer
-  name: ОН-635С статична вартова турель
+  name: ОН 635С статична вартова турель
   description: Повністю автономна оборонна турель, що здатна вкрай ефективно знищувати ворогів на близько-середній дистанції. Оснащена модифікованою автогарматою М32-С та внутрішнім майже нескінченим запасом амуніції.
   components:
   - type: InteractionPopup
@@ -14,7 +14,7 @@
   - type: Corrodible
     isCorrodible: false
   - type: Gun
-    fireRate: 1.5 # Mriya. 2.5 в оригіналі, нерф, поки їм хоча б не повернуть дамаг від плювків
+    fireRate: 2.5
   - type: BallisticAmmoProvider
     cycleable: false
     proto: RMCCartridgeSentry
@@ -51,6 +51,31 @@
     - FactionMarine
   - type: RMCHealthExaminable
     speciesType: Mechanical
+  # Mriya start. Повернення колізії для плювків
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+      sentry:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 20
+        layer:
+        - MidImpassable
+        - BulletImpassable
+        mask:
+        - MidImpassable
+        - BulletImpassable
+        hard: false
+  # Mriya end
 
 - type: entity
   parent: BaseStructure

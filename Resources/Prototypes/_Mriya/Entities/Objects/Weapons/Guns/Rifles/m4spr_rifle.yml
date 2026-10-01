@@ -1,0 +1,73 @@
+# М4СПГ з обвісами для зброярні
+- type: entity
+  parent: WeaponRifleM4SPR
+  id: MMCWeaponRifleM4SPRAttachments
+  suffix: Мрія, З обвісами
+  components:
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentExtendedCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        startingAttachable: RMCAttachmentB8SmartScope
+        whitelist:
+          tags:
+          - RMCAttachmentB8SmartScope
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentS42xTelescopicMiniscope
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS84xTelescopicScope
+      rmc-aslot-underbarrel:
+        startingAttachable: RMCAttachmentVerticalGrip
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentBipod
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentLaserSight
+          - RMCAttachmentVerticalGrip
+          - RMCAttachmentUnderbarrelExtinguisher
+
+- type: entity
+  parent: WeaponRifleM4SPR
+  id: MMCWeaponRifleM4SPRMarksman
+  suffix: Мрія, З обвісами, Снайпер
+  components:
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        startingAttachable: RMCAttachmentExtendedBarrel
+        whitelist:
+          tags:
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentExtendedCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        startingAttachable: RMCAttachmentS84xTelescopicScope
+        whitelist:
+          tags:
+          - RMCAttachmentB8SmartScope
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentS42xTelescopicMiniscope
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS84xTelescopicScope
+      rmc-aslot-underbarrel:
+        startingAttachable: RMCAttachmentVerticalGrip
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentBipod
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentLaserSight
+          - RMCAttachmentVerticalGrip
+          - RMCAttachmentUnderbarrelExtinguisher

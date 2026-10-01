@@ -6,6 +6,6 @@ examine-system-cant-see-entity = Ви не можете розібрати, що
 
 examine-verb-name = Базово
 
-examinable-anchored = Це [color=darkgreen]прикручено[/color] до підлоги.
+examinable-anchored = Це [color=darkgreen]закріплено[/color] до підлоги.
 
-examinable-unanchored = Це [color=darkred]відкручено[/color] від підлоги.
+examinable-unanchored = Це [color=darkred]не закріплено[/color] від підлоги.

@@ -17,7 +17,7 @@ ui-options-value-percent = { TOSTRING($value, "P0") }
 
 # Misc/General menu
 
-ui-options-discordrich = Увімкнути розширену присутність Discord
+ui-options-discordrich = Увімкнути розширену присутність в Дискорді
 ui-options-general-ui-style = Стиль інтерфейсу
 ui-options-general-discord = Discord
 ui-options-general-cursor = Курсор

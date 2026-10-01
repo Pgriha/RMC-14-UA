@@ -2,7 +2,7 @@
   parent: BaseStructure
   abstract: true
   id: RMCBaseTurret
-  name: turret
+  name: турель
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -64,8 +64,8 @@
 - type: entity
   parent: RMCBaseTurret
   id: RMCTurretGaussSpaceborne
-  name: ОН-577 десантна вартова турель
-  description: Повністю автономна оборонна турель, що здатна ефективно знищувати ворогів на близько-середній дистанції. Оснащена модифікованою автогарматою M32-S та внутрішньою стрічкою з набоями.
+  name: ОН 577 десантна вартова турель
+  description: Повністю автономна оборонна турель, що здатна вкрай ефективно знищувати ворогів на близько-середній дистанції. Оснащена експерементальною модифікацією гармати М32-С, що дає їй скажену скорострільність, та внутрішнім майже нескінченим запасом амуніції.
   components:
   - type: Fixtures
     fixtures:

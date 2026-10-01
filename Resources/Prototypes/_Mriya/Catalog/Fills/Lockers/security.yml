@@ -1,0 +1,41 @@
+# Наші власні варіації зброярнь
+- type: entity
+  parent: RMCLockerGunRed
+  id: MMCArmoryLockerRedM54CE2Filled
+  suffix: Мрія. Заповнено, М54СЕ2
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCGunCaseRifleM54CE2
+      amount: 2
+    - id: RMCBoxBulletsRifle
+
+- type: entity
+  parent: RMCLockerGunRed
+  id: MMCArmoryLockerRedM4SPRFilled
+  suffix: Мрія. Заповнено, М4СПР з обвісами
+  components:
+  - type: StorageFill
+    contents:
+    - id: MMCWeaponRifleM4SPRAttachments
+      amount: 3
+    - id: MMCWeaponRifleM4SPRMarksman
+      amount: 1
+    - id: RMCBoxMagazineRifleM4SPR
+      amount: 1
+
+- type: entity
+  parent: RMCLockerGunRed
+  id: MMCArmoryLockerRedPistolsFilled
+  suffix: Мрія. Заповнено, Пістолети
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCM1984BeltFilled
+      amount: 3
+    - id: RMCMK80BeltFilled
+      amount: 1
+    - id: RMCBoxMagazinePistolM1984
+      amount: 1
+    - id: RMCBoxMagazinePistolMK80
+      amount: 1

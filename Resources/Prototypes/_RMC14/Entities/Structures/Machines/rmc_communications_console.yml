@@ -366,8 +366,8 @@
         type: LifeboatComputerBui
   - type: LifeboatComputer
   - type: ActivatableUIRequiresAccess
-  - type: AccessReader
-    access: [ [ "CMAccessDropship" ], [ "RMCAccessSeniorCommand" ] ]
+#  - type: AccessReader – Mriya. У нас не завжди вони є
+#    access: [ [ "CMAccessDropship" ], [ "RMCAccessSeniorCommand" ] ]
   - type: ActivatableUIBlacklist
     blacklist:
       components:
