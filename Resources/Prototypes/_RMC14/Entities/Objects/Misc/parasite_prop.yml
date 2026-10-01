@@ -6,7 +6,7 @@
   components:
   - type: Transform
     anchored: false
-#  - type: Physics – MR. Щоб можна було тягати
+#  - type: Physics – Mriya. Щоб можна було тягати
 #    bodyType: Static
 #    canCollide: false
   - type: Sprite

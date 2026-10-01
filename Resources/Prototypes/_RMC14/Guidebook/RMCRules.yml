@@ -26,12 +26,12 @@
   priority: 3
   text: "/ServerInfo/Guidebook/_RMC14/Rules/RMCRulesCore.xml"
   children:
-#  - RMCLanguage – MR. Щоб не заважало
+#  - RMCLanguage – Mriya. Щоб не заважало
   - RMCRulesEscalation
   - RMCKindness
   - RMCMutinies
 
-#- type: guideEntry – MR. Щоб не заважало
+#- type: guideEntry – Mriya. Щоб не заважало
 #  parent: RMC
 #  id: RMCLanguage
 #  name: rmc-guide-entry-rules-language

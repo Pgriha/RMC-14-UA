@@ -1,8 +1,8 @@
 ﻿- type: entity
-  parent: RMCBaseTurret
+  parent: RMCSentryPremade
   id: RMCTurretAlmayer
-  name: UN-635C static gauss turret
-  description: A fully-automated defence turret with mid-range targeting capabilities. Armed with a modified M32-S Autocannon and an internal belt feed and modified for UN warship use.
+  name: ОН-635С статична вартова турель
+  description: Повністю автономна оборонна турель, що здатна вкрай ефективно знищувати ворогів на близько-середній дистанції. Оснащена модифікованою автогарматою М32-С та внутрішнім майже нескінченим запасом амуніції.
   components:
   - type: InteractionPopup
     interactDelay: 0.2
@@ -55,8 +55,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCDeployerSentry
-  name: sentry deployment system
-  description: A box that deploys a sentry turret.
+  name: система розгортання турелі
+  description: Бокс, який дозволяє розгорнути вартову турель за потреби.
   components:
   - type: Transform
     anchored: true

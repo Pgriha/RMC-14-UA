@@ -152,7 +152,7 @@
         - XenoEgg
   - type: XenoInhands
     prefix: lesser
-#  - type: XenoEggSustainer – MR. Нерф, бо не адмеме
+#  - type: XenoEggSustainer – Mriya. Нерф, бо не адмеме
 #    maxSustainedEggs: 1
 #    sustainedEggsRange: 7
   - type: MovementSpeedModifier

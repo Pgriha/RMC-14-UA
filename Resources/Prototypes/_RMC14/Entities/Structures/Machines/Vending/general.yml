@@ -30,7 +30,7 @@
         amount: 10
       - id: RMCCassetteTapeRedQwesta
         amount: 10
-#      - id: RMCCassetteTapeBolgarich – MR. русняве
+#      - id: RMCCassetteTapeBolgarich – Mriya. русняве
 #        amount: 10
       - id: RMCCassetteTapeQwertyquerty
         amount: 10
@@ -95,7 +95,7 @@
         amount: 10
       - id: MRMagazineWhoIWhereIN21
         amount: 10
-      # Mriya end    
+      # Mriya end
       - id: RMCMagazineBootsN160
         amount: 10
       - id: RMCMagazineBootsN07

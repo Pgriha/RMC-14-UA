@@ -192,7 +192,7 @@
   parent: CMBaseWall
   id: RMCBaseWallReinforced
   name: армована стіна
-  description: Великий шмат армованого металу, що використовується для розділення кімнат. 
+  description: Великий шмат армованого металу, що використовується для розділення кімнат.
   abstract: true
   components:
   - type: Sprite
@@ -241,7 +241,7 @@
   parent: RMCBaseWallReinforced
   id: CMWallReinforced
 #  components:
-#  - type: Corrodible – MR. Реверт, лише заважає
+#  - type: Corrodible – Mriya. Реверт, лише заважає
 #    minimumAcidStrength: Strong
 
 - type: entity
