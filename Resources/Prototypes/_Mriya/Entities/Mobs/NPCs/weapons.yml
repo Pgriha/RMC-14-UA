@@ -9,24 +9,23 @@
     sprite: _Mriya/Mobs/Pets/boom_mothroach.rsi
   - type: Clothing
     sprite: _Mriya/Mobs/Pets/boom_mothroach.rsi
-  - type: MobThresholds
+  - type: MobThresholds # Від звичайної молі. "Це просто карапуз з трубою"
     thresholds:
       0: Alive
-      450: Critical
-      500: Dead
-  - type: CMArmor # Так, її не знищити
-    immuneToAP: true
-    melee: 75
-    bullet: 75
-    bio: 75
-    explosionArmor: 100
+      80: Critical
+      120: Dead
+  - type: CMArmor # Броня від шолому
+    melee: 20
+    bullet: 20
+    bio: 20
+    explosionArmor: 30
   - type: RMCImmuneToFireTileDamage
   - type: CanEscapeInventory
     baseResistTime: 0.5 # 5 в оригінальної
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 15
+#  - type: MeleeWeapon – ТОДО. Поки не працює, додати через атаку ПКМ
+#    damage:
+#      types:
+#        Blunt: 15
   - type: Gun
     fireRate: 1.0
     projectileSpeed: 30
@@ -43,8 +42,8 @@
 #      sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
 #      state: all
   - type: Battery
-    maxCharge: 500
-    startingCharge: 500
+    maxCharge: 400 # Уявіть тут Шварца з тією чотирьохзарядною ракетницею
+    startingCharge: 400
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 100
@@ -65,10 +64,6 @@
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: peacekeeper
   - type: Hands
-  - type: GiveHands
-    hands:
-    - name: Right Hand
-      location: Right
   - type: Puller
     needsHands: false
   - type: VentCrawler

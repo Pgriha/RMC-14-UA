@@ -80,10 +80,6 @@
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: synth
   - type: Hands
-  - type: GiveHands
-    hands:
-    - name: Right Hand
-      location: Right
   - type: Puller
     needsHands: false
   - type: VentCrawler

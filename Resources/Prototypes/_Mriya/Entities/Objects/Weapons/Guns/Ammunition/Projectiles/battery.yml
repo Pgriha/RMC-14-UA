@@ -9,10 +9,10 @@
     impactEffect: BulletImpactEffect
     damage:
       types:
-        Blunt: 15 # 150 в оригінальної
-        Heat: 16 # 160 в оригінальної
+        Blunt: 0 # 150 в оригінальної
+        Heat: 0 # 160 в оригінальної
   - type: RMCStaminaDamageOnCollide
-    damage: 100 # Мінус вся стаміна
+    damage: 300 # Мінус вся стаміна х3, про всяк випадок
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/m5spec_projectiles.rsi
     layers:
@@ -23,8 +23,8 @@
     intensitySlope: 5
     totalIntensity: 1 # 35 в оригінальної
     maxTileBreak: 0
-  - type: RMCKnockOutOnCollide
-    paralyzeTime: 6
+#  - type: RMCKnockOutOnCollide – щоб не шкодило ксено
+#    paralyzeTime: 6
   - type: IgnorePredictionHide
   - type: RMCProjectileAccuracy
     accuracy: 125

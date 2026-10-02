@@ -13,7 +13,7 @@ rmc-health-analyzer-healthy = {$percent} здоровий
 
 rmc-health-analyzer-unknown-reagents = [color=white][italic]Виявлено невідомі речовини.[/italic][/color]
 
-rmc-health-analyzer-advice-epinedrine = [color=#6bd43c][font="Emoji"]💉[/font][/color] Введіть одну дозу епінефрину.
+rmc-health-analyzer-advice-epinephrine = [color=#6bd43c][font="Emoji"]💉[/font][/color] Введіть одну дозу Епінефрину.
 rmc-health-analyzer-advice-defib = [color=yellow][font="Emoji"]⚡[/font][/color] Застосуйте електричний розряд дефібрилятора!
 rmc-health-analyzer-advice-defib-repeated = [color=yellow][font="Emoji"]⚡[/font][/color] Застосовуйте повторювані електричні розряди дефібрилятора.
 rmc-health-analyzer-advice-cpr = [color=skyblue][font="Emoji"]🫀[/font][/color] Робіть періодичне СЛР для запобігання смерті мозку.
