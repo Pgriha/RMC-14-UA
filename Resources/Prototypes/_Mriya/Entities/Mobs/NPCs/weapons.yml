@@ -1,0 +1,193 @@
+- type: entity
+  parent: MRMobMothroach
+  id: MRMobMothroachBoom
+  name: бумжучиха
+  description: Це чарівно-пустотливий побічний продукт спроб схрестити жучих та потужність труб! Що тепер скажете, прихильники якихось там правил війни?
+  suffix: Мрія. Ніаножук, Адмеме
+  components:
+  - type: Sprite
+    sprite: _Mriya/Mobs/Pets/boom_mothroach.rsi
+  - type: Clothing
+    sprite: _Mriya/Mobs/Pets/boom_mothroach.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      450: Critical
+      500: Dead
+  - type: CMArmor # Так, її не знищити
+    immuneToAP: true
+    melee: 75
+    bullet: 75
+    bio: 75
+    explosionArmor: 100
+  - type: RMCImmuneToFireTileDamage
+  - type: CanEscapeInventory
+    baseResistTime: 0.5 # 5 в оригінальної
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 15
+  - type: Gun
+    fireRate: 1.0
+    projectileSpeed: 30
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/m5_shoot.ogg
+  - type: IgnorePredictionHide
+  - type: GunIgnorePrediction
+#  - type: WieldedCrosshair – ТОДО. Додати власну іконку в бойовому режимі
+#    rsi:
+#      sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
+#      state: all
+  - type: Battery
+    maxCharge: 500
+    startingCharge: 500
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 100
+  - type: ProjectileBatteryAmmoProvider
+    proto: MRProjectileRocketTaser
+    fireCost: 100
+  - type: GunRequiresSkills
+    skills:
+      RMCSkillSpecialistWeapons: 2
+  - type: MeleeRequiresSkill
+    skills:
+      RMCSkillSpecialistWeapons: 2
+  - type: Skills
+    skills:
+      RMCSkillSpecialistWeapons: 2
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: peacekeeper
+  - type: Hands
+  - type: GiveHands
+    hands:
+    - name: Right Hand
+      location: Right
+  - type: Puller
+    needsHands: false
+  - type: VentCrawler
+    ventCrawlIcon: lesser
+  - type: RMCTrayCrawler
+  - type: Language
+    spokenLanguages:
+    - English
+    - French
+    - Japanese
+    - Scandinavian
+    - German
+    - Chinese
+    - Spanish
+    - MREnglish
+    - SignLanguage
+    - Xeno
+    understoodLanguages:
+    - English
+    - French
+    - Japanese
+    - Scandinavian
+    - German
+    - Chinese
+    - Spanish
+    - MREnglish
+    - SignLanguage
+    - Xeno
+    currentLanguage: English
+    defaultLanguage: English
+  # Вбудована гарнітура старт
+  - type: CMGhost
+  - type: ViewIntelObjectives
+  - type: GrantAreaInfo
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.TacticalMapUserUi.Key:
+        type: TacticalMapUserBui
+      enum.ViewIntelObjectivesUI.Key:
+        type: ViewIntelObjectivesBui
+        requireInputValidation: false
+      enum.SquadLeaderTrackerUI.Key:
+        type: SquadInfoBui
+      enum.DialogUiKey.Key:
+        type: DialogBui
+  - type: TacMapMarineAlert
+  - type: TacticalMapUser
+    actionId: RMCActionOpenTacticalMapGhost
+    marines: true
+    xenos: true
+    liveUpdate: true
+  - type: ShowMarineIcons
+    factions:
+    - UNMC
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Hivemind
+    - MarineCommon
+    - MarineCommand
+    - MarineMilitaryPolice
+    - MarineAlpha
+    - MarineBravo
+    - MarineCharlie
+    - MarineDelta
+    - MarineEcho
+    - MarineFoxtrot
+    - MarineEngineer
+    - MarineMedical
+    - MarineRequisition
+    - MarineJTAC
+    - MarineIntel
+  - type: ActiveRadio
+    channels:
+    - Hivemind
+    - MarineCommon
+    - MarineCommand
+    - MarineMilitaryPolice
+    - MarineAlpha
+    - MarineBravo
+    - MarineCharlie
+    - MarineDelta
+    - MarineEcho
+    - MarineFoxtrot
+    - MarineEngineer
+    - MarineMedical
+    - MarineRequisition
+    - MarineJTAC
+    - MarineIntel
+  - type: SquadLeaderTracker
+    mode: AuxiliarySupportOfficer
+    trackerModes:
+    - CommandingOfficer
+    - ExecutiveOfficer
+    - AuxiliarySupportOfficer
+    - StaffOfficer
+    - ChiefMilitaryPolice
+    - ChiefEngineer
+    - ChiefMedicalOfficer
+    - Quartermaster
+    - Synthetic
+    - SquadLeader
+    - PrimaryLandingZone
+  # Вбудована гарнітура все
+  - type: Access
+    groups:
+    - ShipMasterAccess
+    - Corp
+    - Colony
+    - Synth
+  - type: WarpPoint
+    follow: true
+    location: Бумжучиха
+  - type: RemoveComponents
+    components:
+    - type: Hunger
+    - type: Thirst
+    - type: Destructible # Щоб не розривало на шмаття
+    - type: ReplacementAccent # Вона може повноцінно балакати
+      accent: mothroach

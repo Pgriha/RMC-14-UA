@@ -7,7 +7,7 @@
   id: MRMobMothroach
   name: тарганоміль
   description: Це чарівно-пустотливий побічний продукт численних спроб генетично змішати молей з тарганами. Бззз!
-  suffix: Мрія, Ніаножук
+  suffix: Мрія. Ніаножук
   components:
   - type: GhostRole
     prob: 0
@@ -33,18 +33,26 @@
   - type: UserIFF
     factions:
     - FactionMarine
+  - type: RemoveComponents # ТОДО. Дай їм що їсти
+    components:
+    - type: Hunger
+    - type: Thirst
 
 - type: entity
   parent: MRMobMothroach
   id: MRMobMothroachSynth
   name: синтетична тарганоміль
   description: "Це чарівно-пустотливий побічний продукт розробки синтетиків у вигляді ніан. Роботичне бззз!\nМає ледь помітний напис \"Прототип Люнет\" на лівому крилі."
-  suffix: Мрія, Ніаножук, Адмеме
+  suffix: Мрія. Ніаножук, Адмеме
   components:
   - type: Sprite
     sprite: _Mriya/Mobs/Pets/synth_mothroach.rsi
   - type: Clothing
     sprite: _Mriya/Mobs/Pets/synth_mothroach.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      500: Dead
   - type: Synth
   - type: CMArmor # Так, її не знищити
     immuneToAP: true
@@ -71,6 +79,11 @@
     icon:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: synth
+  - type: Hands
+  - type: GiveHands
+    hands:
+    - name: Right Hand
+      location: Right
   - type: Puller
     needsHands: false
   - type: VentCrawler
@@ -81,6 +94,7 @@
     - English
     - French
     - Japanese
+    - Scandinavian
     - German
     - Chinese
     - Spanish
@@ -91,6 +105,7 @@
     - English
     - French
     - Japanese
+    - Scandinavian
     - German
     - Chinese
     - Spanish

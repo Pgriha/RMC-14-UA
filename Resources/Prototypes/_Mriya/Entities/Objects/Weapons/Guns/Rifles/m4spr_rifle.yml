@@ -2,6 +2,7 @@
 - type: entity
   parent: WeaponRifleM4SPR
   id: MMCWeaponRifleM4SPRAttachments
+  name: М4СПГ-Р бойова гвинтівка # Р - Розумна
   suffix: Мрія, З обвісами
   components:
   - type: AttachableHolder
@@ -38,6 +39,7 @@
 - type: entity
   parent: WeaponRifleM4SPR
   id: MMCWeaponRifleM4SPRMarksman
+  name: М4СПГ-C бойова гвинтівка # С - Снайперська
   suffix: Мрія, З обвісами, Снайпер
   components:
   - type: AttachableHolder

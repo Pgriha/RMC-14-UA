@@ -1,0 +1,30 @@
+# Спеціально для бумжучихи. Посилений заряд тазеру в ББ ракеті!
+- type: entity
+  parent:  RMCProjectileRocket84mm
+  id: MRProjectileRocketTaser
+  categories: [ HideSpawnMenu ]
+  name: 8.4-мм бронебійна ракета
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffect
+    damage:
+      types:
+        Blunt: 15 # 150 в оригінальної
+        Heat: 16 # 160 в оригінальної
+  - type: RMCStaminaDamageOnCollide
+    damage: 100 # Мінус вся стаміна
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/m5spec_projectiles.rsi
+    layers:
+    - state: m5_84mm_ap
+  - type: Explosive
+    explosionType: RMC
+    maxIntensity: 10
+    intensitySlope: 5
+    totalIntensity: 1 # 35 в оригінальної
+    maxTileBreak: 0
+  - type: RMCKnockOutOnCollide
+    paralyzeTime: 6
+  - type: IgnorePredictionHide
+  - type: RMCProjectileAccuracy
+    accuracy: 125
