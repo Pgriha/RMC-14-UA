@@ -10,6 +10,9 @@
   name: Воїтелька
   description: Кремезна чужопланетна істота з броньованим панцирем, потужними лапами та великими іклами.
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Warrior/warrior.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Warrior/warrior.rsi
   - type: GuideHelp
     guides:
     - RMCGuideRoleWarrior

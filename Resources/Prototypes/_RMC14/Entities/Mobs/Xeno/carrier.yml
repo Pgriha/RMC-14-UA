@@ -112,6 +112,9 @@
   id: CMXenoCarrier
   description: Висока чужопланетна істота з дивними лапами, величезним пузом та купою ніг. По ній повзають дивні крапобоподібні істоти. # Mriya
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Carrier/carrier.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Carrier/carrier.rsi
   - type: GuideHelp
     guides:
     - RMCGuideRoleCarrier
@@ -164,6 +167,9 @@
   description: Висока чужопланетна істота з дивними лапами, величезним пузом та купою ніг. Її пузо постійно дивно пульсує... # Mriya
   suffix: Eggsac
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Carrier/eggsac_carrier.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Carrier/eggsac_carrier.rsi
   - type: CanBuildThickFromConstructNode
   - type: GuideHelp
     guides:
@@ -213,4 +219,3 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: RMCXenoCarrierEggsac
-

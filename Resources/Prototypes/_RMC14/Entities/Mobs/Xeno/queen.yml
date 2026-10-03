@@ -305,6 +305,9 @@
   parent: RMCXenoQueenBase
   id: CMXenoQueen
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Queen/queen.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Queen/queen.rsi
   - type: RMCActionOrder
     id: CMXenoQueen
     #  - type: XenoEvolution #can be enabled for events like april fools.
@@ -318,6 +321,7 @@
   components:
   - type: XenoPheromones
 
+# Mriya start. Видалено нафіг
 #- type: entity
 #  parent: RMCXenoQueenBase
 #  id: RMCXenoQueenMaid
@@ -343,12 +347,16 @@
 #  - type: OwOAccent
 #  - type: Speech
 #    speechSounds: Cat
+# Mriya end
 
 - type: entity
   parent: RMCXenoQueenBase
   id: RMCXenoQueenMagical
   suffix: Magical Girl Queen
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Extras/magicalgirl_queen/magical_queen.rsi
+    oldSprite: _RMC14/Mobs/Xenonids/Extras/magicalgirl_queen/magical_queen.rsi # Поки не маємо, але чи треба
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Extras/magicalgirl_queen/magical_queen.rsi
     layers:

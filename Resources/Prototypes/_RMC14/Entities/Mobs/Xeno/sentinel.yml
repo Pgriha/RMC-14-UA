@@ -11,6 +11,9 @@
   name: Вартова
   description: Невеличка жовта чужопланетна істота з кислотною залозою на шиї.
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Sentinel/sentinel.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Sentinel/sentinel.rsi
   - type: GuideHelp
     guides:
     - RMCGuideRoleSentinel

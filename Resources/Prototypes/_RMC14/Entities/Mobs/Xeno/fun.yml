@@ -7,6 +7,9 @@
   suffix: RMC14
   description: Це Руня!
   components:
+  - type: MriyaOldSprite # Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Rouny/rouny.rsi
+    oldSprite: _RMC14/Mobs/Xenonids/Rouny/rouny.rsi # Не потрібні
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Rouny/rouny.rsi
   - type: XenoEvolution
@@ -24,6 +27,9 @@
   name: Веххі
   description: Жорстокий, дуже жорстокий жарт, вигаданий якоюсь хворою людиною.
   components:
+  - type: MriyaOldSprite # Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Wehny/wehny.rsi
+    oldSprite: _RMC14/Mobs/Xenonids/Wehny/wehny.rsi # Не потрібні
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Wehny/wehny.rsi
   - type: XenoEvolution
@@ -204,4 +210,7 @@
     carrierWhitelist:
       components:
       - Synth
+  - type: MriyaOldSprite # Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Extras/lesser_carrier.rsi
+    oldSprite: _RMC14/Mobs/Xenonids/Extras/lesser_carrier.rsi # Поки не маємо
   # Mriya end

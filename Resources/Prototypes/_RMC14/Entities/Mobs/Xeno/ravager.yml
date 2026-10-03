@@ -144,6 +144,9 @@
   id: CMXenoRavager
   description: Величезна, огидна, червона чужопланетна істота з броньованим панцирем та серпоподібними метровими лезами. Виглядає, ніби природжена вбивця. # Mriya
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Ravager/ravager.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Ravager/ravager.rsi
   - type: XenoShield
   - type: XenoLeap
     delay: 0
@@ -183,6 +186,9 @@
   description: Величезна, огидна, більш червона чужопланетна істота з броньованим панцирем та серпоподібними метровими лезами. Виглядає, ніби справді природжена вбивця. # Mriya
   suffix: Berserker
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Ravager/berserker_ravager.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Ravager/berserker_ravager.rsi
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Ravager/berserker_ravager.rsi
   - type: XenoCappedPheromones
@@ -260,6 +266,9 @@
   description: Величезна, огидна, червона чужопланетна істота з броньованим панцирем та серпоподібними метровими лезами. Більшість її тіла вкрита дивними кісткоподібними уламками. # Mriya
   suffix: Hedgehog
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Ravager/hedgehog_ravager.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Ravager/hedgehog_ravager.rsi
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Ravager/hedgehog_ravager.rsi
   - type: Xeno

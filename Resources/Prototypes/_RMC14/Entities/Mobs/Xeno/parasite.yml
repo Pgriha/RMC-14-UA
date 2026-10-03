@@ -174,6 +174,9 @@
   parent: CMXenoParasiteBase
   id: CMXenoParasite
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Parasite/parasite.rsi
   - type: SleepNPC
   - type: ParasiteAI
   - type: XenoEvolution
@@ -187,6 +190,9 @@
   id: RMCXenoParasiteWatcher
   suffix: Parasite, Watcher
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Parasite/watcher_parasite.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Parasite/watcher_parasite.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest

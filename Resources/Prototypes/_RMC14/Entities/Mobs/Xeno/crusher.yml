@@ -116,6 +116,9 @@
   id: RMCXenoCrusher
   description: Масивна чужопланетна істота з чорним панцирем на все тіло й величезними лапами. Виглядає, ніби танк. # Mriya
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Crusher/crusher.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Crusher/crusher.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest
@@ -145,6 +148,9 @@
   description: Масивна чужопланетна істота з коричневим панцирем на все тіло й величезними лапами. Виглядає, ніби таран?.. # Mriya
   suffix: Charger
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Crusher/crusher.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Crusher/crusher.rsi # Поки не маємо
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Crusher/charger_crusher.rsi
   - type: MobThresholds

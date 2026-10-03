@@ -140,6 +140,9 @@
   id: CMXenoRunner
   description: Невеличка червона та дуже аеродинамічна чужопланетна істота, схоже її лапи створені для бігу.
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Runner/runner.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Runner/runner.rsi
   - type: GuideHelp
     guides:
     - RMCGuideRoleRunner
@@ -186,6 +189,9 @@
   description: Невеличка жовта та аеродинамічна чужопланетна істота, схоже її лапи створені для бігу. Весь її хребет вкритий кислотними почками. # Mriya
   suffix: Acider
   components:
+  - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
+    normalSprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
+    oldSprite: _Mriya/Mobs/OldXenonids/Runner/acider_runner.rsi
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
     layers:
