@@ -158,7 +158,7 @@
         amount: 1
       - id: RMCSatchelWelder
         amount: 5
-     # - id: RMCBackpackAmmo – MR
+     # - id: RMCBackpackAmmo – Mriya
      #   amount: 2
       - id: RMCBackpackRTO
         amount: 2

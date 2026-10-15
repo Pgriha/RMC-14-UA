@@ -162,7 +162,7 @@
   - type: VentCrawler
     ventCrawlIcon: parasite
   - type: Unshieldable
-#  - type: ExcludedFromKingVote – MR
+#  - type: ExcludedFromKingVote – Mriya
   - type: MindTakeoverBehavior
     ejectFromLarvaQueues: false
   - type: RemoveComponents

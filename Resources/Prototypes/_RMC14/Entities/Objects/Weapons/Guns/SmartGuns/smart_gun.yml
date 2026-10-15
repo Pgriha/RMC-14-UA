@@ -436,7 +436,7 @@
 - type: entity
   parent: CMBulletBase
   id: CMBulletSmartGun10x30mm
-#  name: куля (10x30мм) – MR
+#  name: куля (10x30мм) – Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -467,7 +467,7 @@
 - type: entity
   parent: CMBulletSmartGun10x30mm
   id: RMCBulletSmartGun10x30mmirradiated
-#  name: куля ЗУ (10х30 мм) – MR
+#  name: куля ЗУ (10х30 мм) – Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -478,7 +478,7 @@
 - type: entity
   parent: CMBulletSmartGun10x30mm
   id: RMCBulletSmartGun10x30mmHT
-#  name: куля ГН (10х30 мм) – MR
+#  name: куля ГН (10х30 мм) – Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

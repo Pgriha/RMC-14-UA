@@ -241,7 +241,7 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletRevolver357Hollowpoint
-#  name: експансивна куля (.357) – MR
+#  name: експансивна куля (.357) – Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

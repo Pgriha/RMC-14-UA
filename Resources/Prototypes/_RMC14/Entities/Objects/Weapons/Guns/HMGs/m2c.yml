@@ -157,7 +157,7 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletHMG10x28mmTungsten
-#  name: куля (10x28mm Вольфрам) – MR
+#  name: куля (10x28mm Вольфрам) – Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
