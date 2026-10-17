@@ -126,7 +126,7 @@
   - type: Turret
 
 - type: entity
-  parent: RMCBaseTurret
+  parent: RMCSentryPremade # Mriya. RMCBaseTurret в оригіналі
   id: RMCSentryDropship
   name: ОН 571-Ш всюдиглядна вартова турель
   description: Створена для швидкого розгортання та захисту будь-де, куди її скинуть. Напівавтоматична турель, яка може крутити гармату на 360 градусів. Має вбудований ШІ, що допомагає їй розпізнавати ворогів. Оснащенна автогарматою М30 і 500-набійним барабанним магазином.
@@ -180,28 +180,3 @@
     rotationSpeed: 180
     simple4DirMode: false
   - type: Turret
-  # Mriya start. Повернення колізії для плювків
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.25
-        density: 20
-        mask:
-        - ItemMask
-        restitution: 0.3
-        friction: 0.2
-      sentry:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.45
-        density: 20
-        layer:
-        - MidImpassable
-        - BulletImpassable
-        mask:
-        - MidImpassable
-        - BulletImpassable
-        hard: false
-  # Mriya end

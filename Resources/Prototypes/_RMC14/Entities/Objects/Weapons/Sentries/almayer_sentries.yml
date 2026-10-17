@@ -1,9 +1,17 @@
 ﻿- type: entity
-  parent: RMCBaseTurret
+  parent: RMCSentryPremade # Mriya. RMCBaseTurret в оригіналі
   id: RMCTurretAlmayer
   name: ОН 635С статична вартова турель
   description: Повністю автономна оборонна турель, що здатна вкрай ефективно знищувати ворогів на близько-середній дистанції. Оснащена модифікованою автогарматою М32-С та внутрішнім майже нескінченим запасом амуніції.
   components:
+  # Mriya start. Бо змінили перент
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
+    drawdepth: Mobs
+    noRot: false
+    layers:
+    - state: normal_uac_sentry_on
+  # Mriya end
   - type: InteractionPopup
     interactDelay: 0.2
     successChance: 0.8
@@ -51,31 +59,6 @@
     - FactionMarine
   - type: RMCHealthExaminable
     speciesType: Mechanical
-  # Mriya start. Повернення колізії для плювків
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.25
-        density: 20
-        mask:
-        - ItemMask
-        restitution: 0.3
-        friction: 0.2
-      sentry:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.45
-        density: 20
-        layer:
-        - MidImpassable
-        - BulletImpassable
-        mask:
-        - MidImpassable
-        - BulletImpassable
-        hard: false
-  # Mriya end
 
 - type: entity
   parent: BaseStructure
