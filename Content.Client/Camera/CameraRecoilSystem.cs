@@ -1,4 +1,6 @@
+using System; // Mriya. Для Math.Clamp
 using System.Numerics;
+using Content.Shared._Mriya.CCVar; // Mriya. Для MriyaExplosionShakeIntensity
 using Content.Shared.Camera;
 using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
@@ -11,18 +13,32 @@ public sealed class CameraRecoilSystem : SharedCameraRecoilSystem
 
     private float _intensity;
 
+    // Mriya start. Інтенсивність тряски вибухів, мінімум 15% від базового значення
+    private float _explosionIntensity = 1f;
+    public const float ExplosionShakeMin = 0.15f;
+    public const float ExplosionShakeMax = 1f;
+    // Mriya end
+
     public override void Initialize()
     {
         base.Initialize();
         SubscribeNetworkEvent<CameraKickEvent>(OnCameraKick);
 
         Subs.CVar(_configManager, CCVars.ScreenShakeIntensity, OnCvarChanged, true);
+        Subs.CVar(_configManager, MriyaCVars.MriyaExplosionShakeIntensity, OnExplosionCvarChanged, true); // Mriya. Підписка на інтенсивність вибухів
     }
 
     private void OnCvarChanged(float value)
     {
         _intensity = value;
     }
+
+    // Mriya start. 
+    private void OnExplosionCvarChanged(float value)
+    {
+        _explosionIntensity = Math.Clamp(value, ExplosionShakeMin, ExplosionShakeMax);
+    }
+    // Mriya end
 
     private void OnCameraKick(CameraKickEvent ev)
     {
@@ -37,7 +53,7 @@ public sealed class CameraRecoilSystem : SharedCameraRecoilSystem
         if (!Resolve(uid, ref component, false))
             return;
 
-        recoil *= _intensity;
+        recoil *= _intensity * _explosionIntensity; // Mriya. Додано множник інтенсивності вибухів, recoil *= _intensity; в оригіналі
 
         // Use really bad math to "dampen" kicks when we're already kicked.
         var existing = component.CurrentKick.Length();

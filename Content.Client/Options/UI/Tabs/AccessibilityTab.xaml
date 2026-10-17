@@ -11,6 +11,7 @@
                 <Label Text="{Loc 'ui-options-accessability-header-visuals'}"
                        StyleClasses="LabelKeyText"/>
                 <CheckBox Name="ReducedMotionCheckBox" Text="{Loc 'ui-options-reduced-motion'}" />
+                <ui:OptionSlider Name="ExplosionShakeIntensitySlider" Title="{Loc 'mriya-ui-options-explosion-shake-intensity'}" />       <!-- Mriya. Слайдер інтенсивності тряски вибухів -->
                 <CheckBox Name="EnableColorNameCheckBox" Text="{Loc 'ui-options-enable-color-name'}" />
                 <CheckBox Name="ColorblindFriendlyCheckBox" Text="{Loc 'ui-options-colorblind-friendly'}" />
                 <CheckBox Name="XenoAbilityPreviewsCheckBox" Text="{Loc 'rmc-ui-options-xeno-ability-previews'}" />
