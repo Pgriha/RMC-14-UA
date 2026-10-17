@@ -724,7 +724,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL24ExtEmpty
-  name: коробка з магазинами (Розширені Л42 х 16)
+  name: коробка з магазинами (Розширені Л24 х 12)
   components:
   - type: Sprite
     layers:

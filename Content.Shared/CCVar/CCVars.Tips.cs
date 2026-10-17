@@ -30,7 +30,7 @@ public sealed partial class CCVars
         CVarDef.Create("tips.in_game_frequency", 60f * 30);
 
     public static readonly CVarDef<string> LoginTipsDataset =
-        CVarDef.Create("tips.login_dataset", "RMC_Tips");
+        CVarDef.Create("tips.login_dataset", "MR_RMC_Tips"); // Mriya. В теорії повинно бути через конфіг, але він не впливає на клієнт під час завантаження
 
     /// <summary>
     ///     The chance for Tippy to replace a normal tip message.

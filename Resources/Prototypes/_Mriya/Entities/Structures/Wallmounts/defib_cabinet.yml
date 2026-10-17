@@ -68,8 +68,10 @@
   id: MRDefibrillatorCabinetFilledUnlocked
   suffix: Мрія. Заповнено, Без Доступа
   components:
-  - type: AccessReader
-    access: ""
+  - type: RemoveComponents
+    components:
+    - type: AccessReader
+      access: [["CMAccessMedical"]]
 
 - type: entity
   parent: MRDefibrillatorCabinet
