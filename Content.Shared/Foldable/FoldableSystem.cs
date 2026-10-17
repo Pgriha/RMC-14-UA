@@ -117,8 +117,8 @@ public sealed class FoldableSystem : EntitySystem
             return false;
 
         // Can't un-fold in any container unless enabled (locker, hands, inventory, whatever).
-        if (_container.IsEntityInContainer(uid) && !fold.CanFoldInsideContainer)
-            return false;
+        //if (_container.IsEntityInContainer(uid) && !fold.CanFoldInsideContainer) – Mriya. Чувак, я можу опустити пов'язку не знімаючи її з обличчя
+        //    return false;
 
         if (!TryComp(uid, out PhysicsComponent? body) ||
             !_anchorable.TileFree(Transform(uid).Coordinates, body, uid)) //RMC14
