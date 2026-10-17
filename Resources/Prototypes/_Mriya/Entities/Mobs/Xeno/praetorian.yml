@@ -3,7 +3,7 @@
   parent: CMXenoPraetorianBase
   id: MRXenoPraetorianWarden
   description: Велика й небезпечна чужопланетна істота, у якої на шиї велика кислотна почка та при цьому характерний синій гребінь й потужний хвіст.
-  suffix: Наглядач, Мрія
+  suffix: Мрія. Наглядачка
   components:
   - type: MriyaOldSprite # Старі/наші версії спрайтів
     normalSprite: _RMC14/Mobs/Xenonids/Praetorian/warden_praetorian.rsi

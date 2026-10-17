@@ -30,6 +30,10 @@
       state: alive
     - map: [ "enum.XenoVisualLayers.Ovipositor" ]
       sprite: _RMC14/Mobs/Xenonids/Queen/ovipositor.rsi
+    # Mriya start. Старі/наші версії спрайтів
+    - map: [ "enum.XenoVisualLayers.OldOvipositor" ]
+      sprite: _Mriya/Mobs/OldXenonids/Queen/ovipositor.rsi
+    # Mriya end
     - map: [ "enum.RMCDamageVisualLayers.Base" ]
       visible: false
     - map: [ "enum.XenoInhandVisualLayers.Left" ]
@@ -364,6 +368,10 @@
       state: alive
     - map: [ "enum.XenoVisualLayers.Ovipositor" ]
       sprite: _RMC14/Mobs/Xenonids/Extras/magicalgirl_queen/magical_ovipositor.rsi
+    # Mriya start. Старі/наші версії спрайтів. Поки не маємо, але чи треба
+    - map: [ "enum.XenoVisualLayers.OldOvipositor" ]
+      sprite: _RMC14/Mobs/Xenonids/Extras/magicalgirl_queen/magical_ovipositor.rsi
+    # Mriya end
     - map: [ "enum.XenoInhandVisualLayers.Left" ]
       visible: false
     - map: [ "enum.XenoInhandVisualLayers.Right" ]

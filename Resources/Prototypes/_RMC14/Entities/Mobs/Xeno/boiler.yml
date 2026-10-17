@@ -202,7 +202,7 @@
   components:
   - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
     normalSprite: _RMC14/Mobs/Xenonids/Boiler/boiler.rsi
-    oldSprite: _Mriya/Mobs/OldXenonids/Boiler/boiler.rsi # Поки не маємо
+    oldSprite: _Mriya/Mobs/OldXenonids/Boiler/boiler_sapper.rsi
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Boiler/boiler_sapper.rsi
   - type: Xeno

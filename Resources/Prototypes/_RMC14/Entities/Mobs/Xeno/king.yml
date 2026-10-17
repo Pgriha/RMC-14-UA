@@ -11,7 +11,7 @@
   components:
   - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
     normalSprite: _RMC14/Mobs/Xenonids/King/king.rsi
-    oldSprite: _RMC14/Mobs/Xenonids/King/king.rsi # Поки не маємо
+    oldSprite: _Mriya/Mobs/OldXenonids/King/king.rsi
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/King/king.rsi
   - type: MobState

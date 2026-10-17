@@ -1,3 +1,4 @@
+using Content.Shared._Mriya.CCVar; // Mriya
 using Content.Client._RMC14.Sprite;
 using Content.Shared._RMC14.Sprite;
 using Content.Shared._RMC14.Xenonids;
@@ -16,6 +17,7 @@ using Content.Shared.StatusEffect;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
 using Robust.Client.GameObjects;
+using Robust.Shared.Configuration; // Mriya
 using DrawDepth = Content.Shared.DrawDepth.DrawDepth;
 
 namespace Content.Client._RMC14.Xenonids;
@@ -24,6 +26,9 @@ public sealed class XenoVisualizerSystem : VisualizerSystem<XenoComponent>
 {
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly RMCSpriteSystem _rmcSprite = default!;
+    [Dependency] private readonly IConfigurationManager _config = default!; // Mriya
+
+    private bool _onOldSpriteChange; // Mriya
 
     private EntityQuery<XenoAnimateMovementComponent> _animateQuery;
 
@@ -36,6 +41,8 @@ public sealed class XenoVisualizerSystem : VisualizerSystem<XenoComponent>
         SubscribeLocalEvent<XenoComponent, GetDrawDepthEvent>(OnXenoGetDrawDepth);
 
         _animateQuery = GetEntityQuery<XenoAnimateMovementComponent>();
+
+        Subs.CVar(_config, MriyaCVars.MRUseOldSprites, v => _onOldSpriteChange = v, true); // Mriya
     }
 
     private void OnXenoKnockedDown(Entity<XenoComponent> xeno, ref KnockedDownEvent args)
@@ -162,8 +169,13 @@ public sealed class XenoVisualizerSystem : VisualizerSystem<XenoComponent>
 
                 break;
         }
+        // Mriya start. Наш/офіційний спрайт в залежності від налаштувань
+        var ovipositorLayer = _onOldSpriteChange
+            ? XenoVisualLayers.OldOvipositor
+            : XenoVisualLayers.Ovipositor;
+        // Mriya end
 
-        if (!sprite.LayerMapTryGet(XenoVisualLayers.Ovipositor, out var oviLayer))
+        if (!sprite.LayerMapTryGet(ovipositorLayer, out var oviLayer)) // Mriya. XenoVisualLayers.Ovipositor в оригіналі
             return;
 
         if (oviState == null)

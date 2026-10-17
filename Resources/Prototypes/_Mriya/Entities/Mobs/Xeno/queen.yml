@@ -18,6 +18,9 @@
     - map: [ "enum.XenoVisualLayers.Ovipositor" ]
       sprite: _RMC14/Mobs/Xenonids/Queen/ovipositor.rsi
       color: "#BB0A1E"
+    - map: [ "enum.XenoVisualLayers.OldOvipositor" ]
+      sprite: _Mriya/Mobs/OldXenonids/Queen/ovipositor.rsi
+      color: "#BB0A1E"
     - map: [ "enum.RMCDamageVisualLayers.Base" ]
       visible: false
     - map: [ "enum.XenoInhandVisualLayers.Left" ]
