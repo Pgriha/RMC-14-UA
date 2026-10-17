@@ -76,7 +76,7 @@
   parent: MachineFrameDestroyed
   id: CMMachineFrameDestroyed
   name: зруйнована рама машини # Mriya
-  description: Колись це була машина... Наврядч від цього зараз багато сенсу. # Mriya
+  description: Колись це була машина... Навряд чи від цього зараз багато сенсу. # Mriya
   suffix: RMC14
   placement:
     mode: SnapgridCenter

@@ -302,6 +302,9 @@
       entries:
       - id: CMMiniTank
         points: 3
+      - id: RMCDefibrillatorCompact
+        points: 10
+        recommended: true
       - id: RMCWhistle
         points: 5
       - id: RMCPouchMacheteFilled

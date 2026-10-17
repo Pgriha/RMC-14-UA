@@ -21,7 +21,7 @@ cm-job-name-survivor-scientist = Науковець Колоніст
 # Survivor Commander
 # You are a Major of the UNMC.
 rmc-job-name-survivor-co = Уцілілий Командувач
-rmc-job-description-survivor-co = Ви є майором КМПОН
+rmc-job-description-survivor-co = Ви пережили напад на об'єкт корпорації, будучи майором КМПОН чи то іншою дуже важливою особою. Ви працювали або жили в колонії/станції та вам вдавалося уникати атак ксеноїдів... До цього моменту.
 
 # Survivor Synthetic
 # You are a synthetic survivor of the attack on a corporate facility.

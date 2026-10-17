@@ -63,6 +63,10 @@
         points: 15
     - name: Pouches
       entries:
+      # Mriya start. Чому ні
+      - id: RMCPouchGeneralLarge
+        points: 10
+      # Mriya end
       - id: RMCPouchMagazineLarge
         points: 10
       - id: RMCPouchShotgunLarge

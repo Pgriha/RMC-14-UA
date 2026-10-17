@@ -1,25 +1,25 @@
-drink-component-on-use-is-empty = {CAPITALIZE(THE($owner))} is empty!
-drink-component-on-examine-is-empty = [color=gray]Empty[/color]
-drink-component-on-examine-is-opened = [color=yellow]Opened[/color]
-drink-component-on-examine-is-sealed = The seal is intact.
-drink-component-on-examine-is-unsealed = The seal is broken.
-drink-component-on-examine-is-full = Full
-drink-component-on-examine-is-mostly-full = Mostly Full
-drink-component-on-examine-is-half-full = Halfway Full
-drink-component-on-examine-is-half-empty = Halfway Empty
-drink-component-on-examine-is-mostly-empty = Mostly Empty
-drink-component-on-examine-exact-volume = It contains {$amount}u.
-drink-component-try-use-drink-not-open = Open {$owner} first!
-drink-component-try-use-drink-is-empty = {CAPITALIZE(THE($entity))} is empty!
-drink-component-try-use-drink-cannot-drink = You can't drink anything!
-drink-component-try-use-drink-had-enough = You can't drink more!
-drink-component-try-use-drink-cannot-drink-other = They can't drink anything!
-drink-component-try-use-drink-had-enough-other = They can't drink more!
-drink-component-try-use-drink-success-slurp = Slurp
-drink-component-try-use-drink-success-slurp-taste = Slurp. {$flavors}
-drink-component-force-feed = {CAPITALIZE(THE($user))} is trying to make you drink something!
-drink-component-force-feed-success = {CAPITALIZE(THE($user))} forced you to drink something! {$flavors}
-drink-component-force-feed-success-user = You successfully feed {THE($target)}
+drink-component-on-use-is-empty = {CAPITALIZE($owner)} порожнє!
+drink-component-on-examine-is-empty = [color=gray]Порожнє[/color]
+drink-component-on-examine-is-opened = [color=yellow]Відкрите[/color]
+drink-component-on-examine-is-sealed = Пломба ціла.
+drink-component-on-examine-is-unsealed = Пломба пошкоджена.
+drink-component-on-examine-is-full = Повне
+drink-component-on-examine-is-mostly-full = Майже повне
+drink-component-on-examine-is-half-full = На половину повне
+drink-component-on-examine-is-half-empty = На половину порожнє
+drink-component-on-examine-is-mostly-empty = Майже порожнє
+drink-component-on-examine-exact-volume = Це містить {$amount} од.
+drink-component-try-use-drink-not-open = Спочатку відкрийте {$owner}!
+drink-component-try-use-drink-is-empty = {CAPITALIZE($entity)} порожнє!
+drink-component-try-use-drink-cannot-drink = Ви не можете нічого пити!
+drink-component-try-use-drink-had-enough = Ви не можете випити більше!
+drink-component-try-use-drink-cannot-drink-other = Вони не можуть нічого пити!
+drink-component-try-use-drink-had-enough-other = Вони не можуть випити більше!
+drink-component-try-use-drink-success-slurp = Сьорб
+drink-component-try-use-drink-success-slurp-taste = Сьорб. {$flavors}
+drink-component-force-feed = {CAPITALIZE($user)} намагається змусити вас випити щось!
+drink-component-force-feed-success = {CAPITALIZE($user)} змусив вас щось випити! {$flavors}
+drink-component-force-feed-success-user = Ви успішно напоїли {$target}
 
 
-drink-system-verb-drink = Drink
+drink-system-verb-drink = Пити

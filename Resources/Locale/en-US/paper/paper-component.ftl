@@ -4,25 +4,25 @@
 paper-ui-blank-page-message = This page intentionally left blank
 
 # Shown when paper with words examined details
-paper-component-examine-detail-has-words = {CAPITALIZE(THE($paper))} has something written on it.
+paper-component-examine-detail-has-words = {CAPITALIZE($paper)} має щось написане на ньому.
 # Shown when paper with stamps examined
-paper-component-examine-detail-stamped-by = {CAPITALIZE(THE($paper))} {CONJUGATE-HAVE($paper)} been stamped by: {$stamps}.
-paper-component-illiterate = You are unable to write.
-paper-component-illiterate-mime = Your vow forbids you from writing.
+paper-component-examine-detail-stamped-by = {CAPITALIZE($paper)} пропечатано печаткою {$stamps}.
+paper-component-illiterate = Ви не можете писати тут.
+paper-component-illiterate-mime = Твоя обітниця забороняє тобі писати.
 
-paper-component-action-stamp-paper-other = {CAPITALIZE(THE($user))} stamps {THE($target)} with {THE($stamp)}.
-paper-component-action-stamp-paper-self = You stamp {THE($target)} with {THE($stamp)}.
+paper-component-action-stamp-paper-other = {CAPITALIZE($user)} пропечатує {$target} за допомогою {$stamp}.
+paper-component-action-stamp-paper-self = Ви пропечатуєте {$target} за допомогою {$stamp}.
 
 # Indicator to show how full a paper is
 paper-ui-fill-level = {$currentLength}/{$maxLength}
 
-paper-ui-save-button = Save ({$keybind})
+paper-ui-save-button = Зберегти ({$keybind})
 
 # Form and signature buttons
-paper-form-fill-button = Fill
-paper-signature-sign-button = Sign
-paper-form-dialog-ok = OK
-paper-form-dialog-cancel = Cancel
-paper-signature-unknown = Unknown
+paper-form-fill-button = Заповнити
+paper-signature-sign-button = Підписати
+paper-form-dialog-ok = ОК
+paper-form-dialog-cancel = Скасувати
+paper-signature-unknown = Невідомо
 
-paper-tamper-proof-modified-message = This page was written using tamper-proof ink.
+paper-tamper-proof-modified-message = Цю сторінку було написано чорнилом, стійким до несанкціонованого втручання.

@@ -49,7 +49,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 100 # Mriya. 300 в оригіналі
       behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -162,7 +162,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 100 # Mriya. 300 в оригіналі
       behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -215,7 +215,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 100 # Mriya. 300 в оригіналі
       behaviors:
         - !type:PlaySoundBehavior
           sound:

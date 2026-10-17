@@ -180,3 +180,28 @@
     rotationSpeed: 180
     simple4DirMode: false
   - type: Turret
+  # Mriya start. Повернення колізії для плювків
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+      sentry:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 20
+        layer:
+        - MidImpassable
+        - BulletImpassable
+        mask:
+        - MidImpassable
+        - BulletImpassable
+        hard: false
+  # Mriya end

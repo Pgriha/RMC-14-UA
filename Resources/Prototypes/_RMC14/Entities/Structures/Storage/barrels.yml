@@ -63,7 +63,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 75 # Mriya. 150 в оригіналі
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]

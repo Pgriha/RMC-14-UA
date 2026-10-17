@@ -472,7 +472,7 @@
 - type: entity
   parent: RMCNanoMed
   id: RMCNanoMedLimited
-  description: A wall-mounted medical equipment dispenser. This version is more limited than standard UNMC QuickMeds.
+  description: Настінний дозатор для видачі базових медичних засобів першої допомоги. Ця версія має більш обмежений запас речовин, ніж базові моделі.
   suffix: Limited
   components:
   - type: CMSolutionRefiller
@@ -490,8 +490,8 @@
 - type: entity
   parent: RMCNanoMed
   id: RMCBobdaMed
-  name: BobdaMed
-  description: In Bobdaland (Trademark pending), one is never more than 6ft away from canned Havana goodness. Drink a Bobda today! For a full selection of Bobda products please visit a licensed retailer or vending machine. Also doubles as basic first aid station.
+  name: БобдаМед
+  description: У Бобдаленді (торгова марка очікує на розгляд) ви ніколи не знаходитесь далі, ніж на 1,8 метра від консервованих смаколиків з Гавани. Випийте Бобду сьогодні! Щоб переглянути повний асортимент продукції Бобди – відвідайте ліцензованого продавця або торговий автомат. Також служить базовим пунктом першої допомоги.
   components:
   - type: Sprite
     drawdepth: WallMountedItems
@@ -499,47 +499,47 @@
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Supplies
+    - name: Перша допомога
       entries:
       - id: CMTricordrazineAutoInjectorNoSkill
-        name: First-Aid Autoinjector
+      #  name: First-Aid Autoinjector – Mriya. Не треба
         amount: 2
 #      - id: CMPainStopAutoinjector
 #        name: Pain-Stop Autoinjector
 #        amount: 2
       - id: CMGauze10
-        name: Roll of Gauze
+      #  name: Roll of Gauze – Mriya
         amount: 4
       - id: CMOintment10
-        name: Ointment
+      #  name: Ointment – Mriya
         amount: 4
       #- id: CMMedicalSplints5
       #  name: Medical Splints
       #  amount: 4
-    - name: Utility
+    - name: Пристрої
       entries:
       - id: CMHealthAnalyzer
-        name: HF2 Health Analyzer
+      #  name: HF2 Health Analyzer – Mriya
         amount: 2
-    - name: Bobda
+    - name: Моральна допомога
       entries:
       - id: CMDrinkCanBobdaClassic
-        name: Bobda Classic
+      #  name: Bobda Classic – Mriya
         amount: 1
       - id: CMDrinkCanBobdaClassicDiet
-        name: Diet Bobda Classic
+      #  name: Diet Bobda Classic – Mriya
         amount: 1
       - id: CMDrinkCanBobdaCranberry
-        name: Bobda Cranberry
+      #  name: Bobda Cranberry – Mriya
         amount: 1
       - id: CMDrinkCanBobdaCranberryDiet
-        name: Diet Bobda Cranberry
+      #  name: Diet Bobda Cranberry – Mriya
         amount: 1
       - id: CMDrinkCanBobdaGrape
-        name: Bobda Grape
+      #  name: Bobda Grape – Mriya
         amount: 1
       - id: CMDrinkCanBobdaGrapeDiet
-        name: Diet Bobda Grape
+      #  name: Diet Bobda Grape – Mriya
         amount: 1
 
 - type: entity

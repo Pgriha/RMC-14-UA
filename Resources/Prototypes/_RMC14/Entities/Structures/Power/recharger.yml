@@ -2,6 +2,7 @@
   parent: [ BaseRecharger, RMCConstructibleMachine ]
   id: RMCRecharger
   name: зарядник
+  description: Зарядний пристрій різного обладнання. Має порти для всього, починаючи від дефібриляторів медиків та старих ПНБ-забрал та до електрошокових кийків ВСП. Справжня мрія інженера-ремонтника. # Mriya
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Power/recharger.rsi
@@ -53,6 +54,11 @@
           - Visor
           - PortableDialysis
           # SmartGun Battery
+        # Mriya start. Цивільний дефіб не можна перезарядити
+        blacklist:
+          tags:
+          - MRDefibrillatorCivilian
+        # Mriya end
   - type: ItemMapper
     sprite: _RMC14/Structures/Power/recharger.rsi
     mapLayers:

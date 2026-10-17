@@ -1,0 +1,82 @@
+# Ліниво взято з СМУ
+- type: entity
+  parent: BaseItemCabinet
+  id: MRDefibrillatorCabinet
+  name: шафа для дефібрилятора
+  description: "Настінна шафа для зберігання екстреного дефібрилятора для цивільних. Має напис: \"Тільки для екстреного використання немедичним персоналом.\""
+  suffix: Мрія
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: WallMount
+    arc: 175
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: _CMU14/Structures/audefibcabinet.rsi
+    noRot: false
+    layers:
+    - state: frame
+    - state: fill
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: true
+    - state: closed
+      map: ["enum.OpenableVisuals.Layer"]
+  - type: ItemSlots
+    slots:
+      ItemCabinet:
+        ejectOnInteract: true
+        whitelist:
+          tags:
+          - MRDefibrillatorCivilian
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:EmptyAllContainersBehaviour
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+  - type: Lock
+  - type: AccessReader
+    access: [["CMAccessMedical"]]
+
+- type: entity
+  parent: MRDefibrillatorCabinet
+  id: MRDefibrillatorCabinetFilled
+  suffix: Мрія. Заповнено
+  components:
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - MRDefibrillatorCivilian
+
+- type: entity
+  parent: MRDefibrillatorCabinetFilled
+  id: MRDefibrillatorCabinetFilledUnlocked
+  suffix: Мрія. Заповнено, Без Доступа
+  components:
+  - type: AccessReader
+    access: ""
+
+- type: entity
+  parent: MRDefibrillatorCabinet
+  id: MRDefibrillatorCabinetOpen
+  suffix: Мрія. Відчинено
+  components:
+  - type: Openable
+    opened: true
+  - type: Lock
+    locked: false

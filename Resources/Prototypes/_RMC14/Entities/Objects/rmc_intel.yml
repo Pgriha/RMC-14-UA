@@ -177,7 +177,7 @@
   parent: RMCCommunicationsConsoleBase
   id: RMCTechTreeConsole
   name: консоль авторизації активів
-  description: Консоль для відкриття технологій.
+  description: Консоль, яка використовується для активації додаткових засобів під час операції. Зазвичай потребує Очок Розвідки задля використання будь-яких опцій.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -355,6 +355,21 @@
             sprite: _RMC14/Interface/tech_tree.rsi
             state: upgrade
       -
+      # Mriya start
+        - name: mriya-intel-tech-requisition-research-upgrade-name
+          description: mriya-intel-tech-requisition-research-upgrade-description
+          cost: 5
+          repurchasable: true
+          events:
+          - !type:TechLogisticsDeliveryEvent
+            object: MRCrateRestrictedEquipmentResearchUpgrades
+          - !type:TechAnnounceEvent
+            author: rmc-intel-tech-announcement-special-assets-author
+            message: mriya-intel-tech-announcement-research-upgrade
+          icon:
+            sprite: _RMC14/Interface/tech_tree.rsi
+            state: medic_qol
+      # Mriya end
         - name: rmc-intel-tech-ob-he-name
           description: rmc-intel-tech-ob-he-description
           cost: 5
