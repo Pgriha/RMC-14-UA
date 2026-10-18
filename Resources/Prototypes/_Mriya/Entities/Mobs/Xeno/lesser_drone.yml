@@ -54,6 +54,7 @@
     - ActionXenoTailStab
     tier: 0
     hudOffset: -0.25, 0
+    oldHudOffset: -0.25, 0 # Mriya. Старі/наші версії спрайтів
     contributesToVictory: false
     countedInSlots: false
     unlockAt: 0

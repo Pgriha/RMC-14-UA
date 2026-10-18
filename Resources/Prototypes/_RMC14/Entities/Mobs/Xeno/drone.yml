@@ -43,6 +43,7 @@
   - type: Xeno
     role: CMXenoDrone
     hudOffset: -0.1,0.15
+    oldHudOffset: -0.1,0.15 # Mriya. Старі/наші версії спрайтів
     tier: 1
     bypassTierCount: true
     unlockAt: 60 # 1 minute

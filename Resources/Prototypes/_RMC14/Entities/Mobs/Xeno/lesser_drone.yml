@@ -47,6 +47,7 @@
     - ActionXenoSecreteStructure
     tier: 0
     hudOffset: -0.15,-0.03
+    oldHudOffset: -0.2,-0.03 # Mriya. Старі/наші версії спрайтів
     contributesToVictory: false
     countedInSlots: false
     unlockAt: 0

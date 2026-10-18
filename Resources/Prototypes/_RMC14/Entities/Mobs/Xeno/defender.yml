@@ -31,6 +31,7 @@
     role: CMXenoDefender
     tier: 1
     hudOffset: -0.1,0.2
+    oldHudOffset: 0,0.2 # Mriya. Старі/наші версії спрайтів
     unlockAt: 240 # 4 minutes
   - type: XenoLight
   - type: XenoDevolve

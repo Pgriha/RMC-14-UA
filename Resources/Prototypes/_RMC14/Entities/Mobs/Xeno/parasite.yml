@@ -44,6 +44,7 @@
     - ActionXenoLeap
     tier: 0
     hudOffset: -0.1,0.1
+    oldHudOffset: 0,0.4 # Mriya. Старі/наші версії спрайтів
     contributesToVictory: false
     countedInSlots: false
     unlockAt: 0
