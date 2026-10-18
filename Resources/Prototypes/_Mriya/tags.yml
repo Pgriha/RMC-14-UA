@@ -12,3 +12,7 @@
 # Білий список будівництва ксено
 - type: Tag
   id: AllowXenoConstruction
+
+# Для "цивільного" дефіба
+- type: Tag
+  id: MRDefibrillatorCivilian

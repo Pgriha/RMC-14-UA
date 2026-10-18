@@ -39,7 +39,7 @@
     #    CMMedicalSplints: 1P
 #        recommended: true
       - id: CMBloodPackFull # TODO RMC14 O-
-        name: пакет з кров'ю (О-)
+        name: пакет із кров'ю (О-)
         points: 4
     - name: Аптечки Першої Допомоги
       entries:
@@ -115,6 +115,11 @@
         points: 4
       - id: CMStasisBagFolded
         points: 6
+      # Mriya start
+      - id: RMCDefibrillatorCompact
+        points: 10
+        recommended: true
+      # Mriya end
     - name: Вибухівка
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled

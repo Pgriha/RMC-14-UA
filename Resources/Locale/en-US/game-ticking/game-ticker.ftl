@@ -5,7 +5,7 @@ game-ticker-start-round-cannot-start-game-mode-restart = Не вдалося з�
 game-ticker-start-round-invalid-map = Вибрана мапа {$map} є непридатною для режиму гри {$mode}. Режим гри може працювати неналежним чином.
 game-ticker-unknown-role = Невідомий
 game-ticker-delay-start = Початок раунду відкладено на {$seconds} секунд.
-game-ticker-pause-start = Початок раунду призупинено.
+game-ticker-pause-start = Початок раунду відкладено на невизначений час.
 game-ticker-pause-start-resumed = Відлік початку раунду відновлено.
 game-ticker-player-join-game-message = Вітаємо й ласкаво просимо до Космодесанту! Якщо ви граєте вперше, обов'язково прочитайте правила гри і не бійтеся звертатися за допомогою до LOOC (локальний OOC) або OOC (зазвичай доступний лише між раундами).
 game-ticker-get-info-text = Вітаємо та ласкаво просимо до лав [color=white]Космодесанту Мрії![/color]

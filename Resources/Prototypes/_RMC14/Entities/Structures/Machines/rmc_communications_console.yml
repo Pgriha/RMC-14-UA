@@ -256,6 +256,7 @@
         - MidImpassable
         - LowImpassable
   - type: PlaceableSurface
+  - type: Climbable # Mriya. А чому ні?
 
 - type: entity
   parent: RMCTacticalMapTableLarge

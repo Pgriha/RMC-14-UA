@@ -13,7 +13,7 @@ cm-job-prefix-liaison = ПК
 CMJobLiaison = Представник Корпорації
 
 rmc-job-name-synth = Синтет КМПОН
-rmc-job-description-synth = Підтримувати й допомагати відділом та персоналу КМПОН.
+rmc-job-description-synth = Підтримуйте та допомагайте персоналу КМПОН на судні та на землі. Не забувайте, що ви лише машина, якій головне не пошкодити свій блискучий корпус!
 rmc-job-prefix-synth = СИНТ
 RMCJobSynthetic = Синтет
 

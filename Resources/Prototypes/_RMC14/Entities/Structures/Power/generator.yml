@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: RMCGeneratorFusionFake
   name: остаточно зруйнований термоядерний реактор С-52
-  description: Якщо в тебе нема запасу термоядерного палива, команди професійних інженерів та освіти у сфері ядерної енергетики, то ти наврядч щось з ним зробиш... # Mriya
+  description: Якщо в тебе нема запасу термоядерного палива, команди професійних інженерів та освіти у сфері ядерної енергетики, то ти навряд чи щось з ним зробиш... # Mriya
   placement:
     mode: SnapgridCenter
   components:
@@ -165,7 +165,7 @@
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 100
+            damage: 50 # Mriya. 100 в оригіналі, повернути до 100, коли вони будуть працювати
           behaviors:
             - !type:PlaySoundBehavior
               sound:

@@ -84,7 +84,7 @@ public sealed class XenoWordQueenSystem : EntitySystem
         if (xenos.Count <= 1)
         {
             _popup.PopupEntity(Loc.GetString("cm-xeno-words-of-the-queen-nobody-hear-you"), queen, queen, PopupType.LargeCaution);
-            return;
+        //    return; – Mriya. Дайте спілкуватися з розумом вулика (привидами) :godo:
         }
 
         _xenoPlasma.TryRemovePlasma(queen.Owner, queen.Comp.PlasmaCost);

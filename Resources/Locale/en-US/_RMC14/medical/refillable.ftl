@@ -6,7 +6,7 @@ rmc-bottle-open = Воно не закрито.
 rmc-bottle-put-lid = Закрити кришку
 rmc-bottle-remove-lid = Зняти кришку
 
-rmc-refillsolution-flush = Контейнер
+rmc-refillsolution-flush = Спустошити
 rmc-refillsolution-flush-start = Ви почали утримувати кнопку аварійного зливу. Зачекайте {$time} секунд...
 
 rmc-reagent-pouch-no-canister = Цей {$target} не має контейнеру всередині!

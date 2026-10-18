@@ -63,8 +63,8 @@
 - type: entity
   parent: BaseItem
   id: CMBloodPack # TODO RMC14 blood types
-  name: пакет з кров'ю
-  description: Пакет крові. Містить рідину, яку зазвичай використовуються для переливання.
+  name: пакет для крові
+  description: Пакет для рідин чи то хімікатів. Зазвичай використовується для зберігання крові та її переливання тим, у кого її не вистачає.
   suffix: CM, empty
   components:
   - type: BloodPack
@@ -122,7 +122,7 @@
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFull # TODO RMC14 blood types
-  name: пакет з кров'ю
+  name: пакет із кров'ю (О-)
   suffix: CM, Full
   components:
   - type: SolutionContainerManager

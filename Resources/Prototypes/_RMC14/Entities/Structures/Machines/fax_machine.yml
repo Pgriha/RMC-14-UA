@@ -157,7 +157,7 @@
   parent: CMFax
   id: RMCFaxColony #todo for RMC: Colony Fax machine that can only fax We-Ya and cannot be faxed by Marines.
   suffix: Colony, Unusable
-  description: Відчуття, ніби хтось вирішив витягнути всі внутрощі з нього. Наврядч він все ще здатен виконувати свої функції.
+  description: Відчуття, ніби хтось вирішив витягнути всі нутрощі з нього. Навряд чи він все ще здатен виконувати свої функції.
   components:
   - type: RemoveComponents
     components:

@@ -10,7 +10,14 @@
   parent: BaseStructure
   id: CMGirder
   name: балка
+  description: Основа для майбутньої стіни. В ній вже купа сталі, але все ще майже нульова міцність. # Mriya
   components:
+  # Mriya start. Можливість будувати на ньому
+  - type: Tag
+    tags:
+    - Structure
+    - AllowXenoConstruction
+  # Mriya end
   - type: Transform
     anchored: true
   - type: Physics
@@ -85,7 +92,8 @@
 - type: entity
   parent: CMGirder
   id: CMGirderReinforced
-  name: reinforced girder
+  name: укріплена балка
+  description: Основа для майбутньої армованої стіни. В ній вже купа сталі та пласталі, але все ще майже нульова міцність. # Mriya
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/girder.rsi
@@ -134,15 +142,9 @@
 - type: entity
   parent: CMGirder
   id: RMCGirderDisplaced # TODO RMC14 : Requires crowbarring to be used as a girder
-  name: displaced
+  name: балка
   suffix: Girder
   components:
-  # Mriya start. Можливість будувати на ньому
-  - type: Tag
-    tags:
-    - Structure
-    - AllowXenoConstruction
-  # Mriya end
   - type: Transform
     anchored: false
   - type: Sprite
@@ -152,8 +154,8 @@
 
 - type: entity
   id: RMCGirderDamaged
-  name: damaged girder
-  description: A twisted girder that no longer blocks passage.
+  name: пошкоджена балка
+  description: Розтрощена балка, яка більше не завадить вам тут ходити.
   components:
   - type: Transform
     anchored: true

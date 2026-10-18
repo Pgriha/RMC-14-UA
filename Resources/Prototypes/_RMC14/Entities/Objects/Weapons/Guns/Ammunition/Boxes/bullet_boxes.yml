@@ -146,8 +146,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifleIncendiary
-  name: rifle ammunition box (10x24mm Incendiary)
-  description: A 10x24mm incendiary ammunition box. Used to refill M54C MK2, and M4SPR incendiary magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: коробка набоїв для гвинтівок (10х24 мм запальні)
+  description: Коробка з запальними набоями калібру 10х24 мм. Використовується для поповнення запальних магазинів M54C МК1, МК2, та М4СПГ. Має шкіряну лямку, що дозволяє носити її на спині.
   components:
   - type: Sprite
     layers:
@@ -279,8 +279,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsPistol
-  name: pistol ammunition box (10x20mm-APC)
-  description: A 10x20mm-APC ammunition box. Used to refill M13 regular, extended and drum magazines. It comes with a leather strap allowing to wear it on the back.
+  name: коробка набоїв для пістолетів (10х20 мм АПК)
+  description: Коробка з набоями калібру 10х20 мм АПК. Використовується для поповнення звичайних та розширених магазинів для М13. Має шкіряну лямку, що дозволяє носити її на спині.
   components:
   - type: Sprite
     layers:
@@ -315,8 +315,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsPistolAP
-  name: pistol ammunition box (10x20mm-APC (AP))
-  description: A 10x20mm-APC armor-piercing ammunition box. Used to refill M13 regular, extended and drum AP magazines. It comes with a leather strap allowing to wear it on the back.
+  name: коробка набоїв для пістолетів (10х20 мм АПК ББ)
+  description: Коробка з бронебійними набоями калібру 10х20 мм АПК. Використовується для поповнення бронебійних магазинів для М13. Має шкіряну лямку, що дозволяє носити її на спині.
   components:
   - type: Sprite
     layers:

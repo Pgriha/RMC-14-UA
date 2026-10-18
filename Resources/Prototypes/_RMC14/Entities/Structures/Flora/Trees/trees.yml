@@ -3,6 +3,12 @@
   description: Так, це дерево.
   abstract: true
   components:
+  # Mriya start. Можливість будувати на ньому
+  - type: Tag
+    tags:
+    - Structure
+    - AllowXenoConstruction
+  # Mriya end
   - type: SpriteFade
   - type: Clickable
   - type: Sprite
@@ -20,7 +26,7 @@
           bounds: "-0.35,-0.4,0.35,0.4"
         density: 1000
         layer:
-        - WallLayer
+        - MachineLayer # Mriya. WallLayer в оригіналі. Фікс колізії для будівництва на ньому
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
@@ -55,6 +61,7 @@
 - type: entity
   parent: RMCBaseTree
   id: RMCBaseTreeSnow
+  description: Так, це дерево в снігу. # Mriya
   abstract: true
   components:
   - type: Sprite
@@ -68,7 +75,7 @@
           bounds: "-0.1,-0.3,0.1,0.3"
         density: 4000
         layer:
-        - WallLayer
+        - MachineLayer # Mriya. WallLayer в оригіналі. Фікс колізії для будівництва на ньому
   - type: Destructible
     thresholds:
     - trigger:
@@ -99,6 +106,7 @@
 - type: entity
   parent: RMCBaseTree
   id: RMCBaseTreeLarge
+  description: Так, це велике дерево. # Mriya
   abstract: true
   components:
   - type: Sprite
@@ -112,11 +120,12 @@
           bounds: "-0.18,-0.35,0.18,0.35"
         density: 2000
         layer:
-        - WallLayer
+        - MachineLayer # Mriya. WallLayer в оригіналі. Фікс колізії для будівництва на ньому
 
 - type: entity
   parent: RMCBaseTree
   id: RMCBaseTreeConifer
+  description: Так, це хвойне дерево в снігу. # Mriya
   abstract: true
   components:
   - type: Sprite
@@ -130,7 +139,7 @@
           bounds: "-0.1,-0.35,0.1,0.35"
         density: 3500
         layer:
-        - WallLayer
+        - MachineLayer # Mriya. WallLayer в оригіналі. Фікс колізії для будівництва на ньому
   - type: Destructible
     thresholds:
     - trigger:
@@ -162,8 +171,8 @@
   parent: RMCBaseTree
   id: RMCBaseTreeAlien
   abstract: true
-  name: strange tree
-  description: Some kind of bizarre alien tree. It oozes with a sickly yellow sap.
+  name: дивне дерево
+  description: Якесь дивне інопланетне дерево. З нього сочиться нудотно-жовтий сік.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Flora/flora_treealien.rsi
@@ -176,7 +185,7 @@
           bounds: "-0.1,-0.3,0.1,0.3"
         density: 4000
         layer:
-        - WallLayer
+        - MachineLayer # Mriya. WallLayer в оригіналі. Фікс колізії для будівництва на ньому
   - type: Destructible
     thresholds:
     - trigger:

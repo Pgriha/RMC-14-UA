@@ -5,6 +5,12 @@
   name: tallgrass
   suffix: Centre
   components:
+  # Mriya start. Можливість будувати на ньому
+  - type: Tag
+    tags:
+    - Structure
+    - AllowXenoConstruction
+  # Mriya end
   # make this slashable by only machete
   - type: Sprite
     sprite: _RMC14/Structures/Flora/tallgrass.rsi
@@ -25,7 +31,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 15 # Mriya. 100 в оригіналі. Це ж просто трава
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

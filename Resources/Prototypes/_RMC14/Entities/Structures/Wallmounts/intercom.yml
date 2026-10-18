@@ -1,14 +1,20 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   id: CMIntercom
-  name: intercom
-  description: An intercom. For when the marines just needs to know something.
+  name: інтерком
+  description: Інтерком. Існує, щоб морпіхи могли або дізнатися щось важливе, або сказати щось важливе.
   abstract: true
   components:
   - type: WallMount
+  # Mriya start. Змінено, щоб вони мали електрику
   - type: ApcPowerReceiver
-    powerLoad: 100 # TODO RMC14 power
+    powerLoad: 100
     needsPower: true
+  - type: RMCPowerReceiver
+    idleLoad: 0
+    activeLoad: 0
+    channel: Environment
+  # Mriya end
   - type: Electrified
     enabled: false
     usesApcPower: true

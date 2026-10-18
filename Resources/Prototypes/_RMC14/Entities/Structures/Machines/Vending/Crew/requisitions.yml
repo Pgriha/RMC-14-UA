@@ -158,7 +158,7 @@
         amount: 1
       - id: RMCSatchelWelder
         amount: 5
-     # - id: RMCBackpackAmmo – MR
+     # - id: RMCBackpackAmmo – Mriya
      #   amount: 2
       - id: RMCBackpackRTO
         amount: 2
@@ -311,7 +311,7 @@
         boxAmount: 3
         boxSlots: 3
       - id: RMCBoxClaymoreMineFilled
-        name: M20 Claymore anti-personnel mine box
+        name: коробка з мінами М20
         box: RMCExplosiveClaymoreMine
         boxAmount: 5
         boxSlots: 5
@@ -326,7 +326,7 @@
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeWhitePhosphorusCompoundFilled
-        name: 30mm CCDP grenade packet
+        name: упаковка гранат М40 ХПП
         box: RMCGrenadeWhitePhosphorusCompound
         boxAmount: 3
         boxSlots: 3

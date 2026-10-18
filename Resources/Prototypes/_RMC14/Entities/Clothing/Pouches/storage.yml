@@ -371,9 +371,9 @@
     - 0,0,13,5 #21 slots
     whitelist:
       tags:
-      - Document
-      - Folder
-      - Write
+      #- Document – Mriya. Не мучте інтелів
+      #- Folder
+      #- Write
       - RMCIntelItem
       - RMCDataDisk
   - type: FixedItemSizeStorage

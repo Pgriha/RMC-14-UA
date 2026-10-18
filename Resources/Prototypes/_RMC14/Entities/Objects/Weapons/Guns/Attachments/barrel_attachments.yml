@@ -341,7 +341,7 @@
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentSuppressorL112
   name: Л112А1 інтегрований глушник
-  description: Капра-... Наврядч це можна якось прикріпити назад.
+  description: Капра-... Навряд чи це можна якось прикріпити назад.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_barrel.rsi

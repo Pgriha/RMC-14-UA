@@ -377,9 +377,9 @@
         crate: RMCCrateXM51
       - cost: 4000
         crate: RMCCrateM85A1
-      - cost: 8000 # Mriya. 6000 в оригіналі, це буде бісове крило літака, хай Інтел працює
+      - cost: 6000
         crate: RMCCrateML66D
-      - cost: 8000 # Mriya. Теж саме, що й трохи вище
+      - cost: 6000
         crate: RMCCrateM2C
       - cost: 10000 # Mriya. Повернуто, бо чому ні
         crate: RMCCrateSmartGunSet

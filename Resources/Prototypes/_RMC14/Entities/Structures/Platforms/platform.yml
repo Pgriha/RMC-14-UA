@@ -1,3 +1,8 @@
+# Mriya. Щодо того, що це за лайно ми нижче наробили:
+# У платформ є 2 тригера:
+# Перший - це від меншого дамагу (90 у звичайної) й він робить так, що після зламу залишається зламана версія платформи (інша текстурка та не треба стрибати)
+# Другий - це вже більший дамаг (110 у звичайної) й він робить так, що після зламу нічого не залишається.
+# Проблема у тому, що цей об'єкт є лише для звичайної платформи (полоска), але тригер є у всіх. Тому звичайній ми зменшуємо лише дамаг на перший тригер, а іншим на обидва.
 - type: entity
   abstract: true
   id: CMPlatformBase
@@ -14,6 +19,7 @@
   - type: Climbable
     delay: 0.25
   - type: Corrodible # Mriya. Додано можливість плавити
+    timeToApply: 1
   - type: Tag
     tags:
     - Platform
@@ -32,6 +38,7 @@
   - type: InteractionOutline
   - type: Clickable
   - type: Corrodible # Mriya. Додано можливість плавити
+    timeToApply: 1
 
 - type: entity
   abstract: true
@@ -44,13 +51,13 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 30 # Mriya. В оригіналі 110. Зменшення необхідної шкоди
+          damage: 110
         behaviors:
           - !type:DoActsBehavior
             acts: ["Destruction"]
       - trigger:
           !type:DamageTrigger
-          damage: 20 # Mriya. В оригіналі 90. Зменшення необхідної шкоди
+          damage: 15 # Mriya. В оригіналі 90. Зменшення необхідної шкоди
         behaviors:
           - !type:ChangeConstructionNodeBehavior
             node: platformBroken
@@ -135,6 +142,24 @@
   - type: Sprite
     state: platform_corner
   - type: Climbable
+  # Mriya start. Окремий компонент (пояснення на початку)
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 20 # В оригіналі 110. Зменшення необхідної шкоди
+        behaviors:
+          - !type:DoActsBehavior
+            acts: ["Destruction"]
+      - trigger:
+          !type:DamageTrigger
+          damage: 20 # В оригіналі 90
+        behaviors:
+          - !type:ChangeConstructionNodeBehavior
+            node: platformBroken
+          - !type:DoActsBehavior
+            acts: ["Breakage"]
+  # Mriya end
 
 - type: entity
   parent: CMPlatformBase
@@ -153,13 +178,13 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 30 # Mriya. В оригіналі 45. Зменшення необхідної шкоди
+          damage: 10 # Mriya. В оригіналі 45. Зменшення необхідної шкоди
         behaviors:
           - !type:DoActsBehavior
             acts: ["Destruction"]
       - trigger:
           !type:DamageTrigger
-          damage: 20 # Mriya. В оригіналі 30. Зменшення необхідної шкоди
+          damage: 10 # Mriya. В оригіналі 30
         behaviors:
           - !type:ChangeConstructionNodeBehavior
             node: platformBroken
@@ -203,7 +228,7 @@
             acts: ["Destruction"]
       - trigger:
           !type:DamageTrigger
-          damage: 20 # Mriya. В оригіналі 110. Зменшення необхідної шкоди
+          damage: 30 # Mriya. В оригіналі 110
         behaviors:
           - !type:ChangeConstructionNodeBehavior
             node: platformBroken

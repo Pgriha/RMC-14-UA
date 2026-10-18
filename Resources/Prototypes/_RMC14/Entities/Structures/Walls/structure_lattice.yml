@@ -1,9 +1,15 @@
 - type: entity
   parent: BaseStructureDynamic
   id: RMCStructureLattice
-  name: structural lattice
-  description: Like rebar, but in space.
+  name: структурна решітка
+  description: Як арматура, але у космосі.
   components:
+  # Mriya start. Можливість будувати на ньому
+  - type: Tag
+    tags:
+    - Structure
+    - AllowXenoConstruction
+  # Mriya end
   - type: Sprite
     sprite: _RMC14/Structures/structure_lattice.rsi
     state: structure_lattice_a
@@ -77,9 +83,15 @@
 - type: entity
   parent: BaseStructureDynamic
   id: RMCStructureLatticeDouble
-  name: structural lattice
-  description: Like rebar, but in space.
+  name: структурна решітка
+  description: Як арматура, але у космосі.
   components:
+  # Mriya start. Можливість будувати на ньому
+  - type: Tag
+    tags:
+    - Structure
+    - AllowXenoConstruction
+  # Mriya end
   - type: Sprite
     sprite: _RMC14/Structures/double_structure_lattice.rsi
     state: structure_lattice_a

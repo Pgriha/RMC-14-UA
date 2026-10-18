@@ -634,7 +634,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL24Empty
-  name: magazine box (L24 x 16)
+  name: коробка з магазинами (Л24 х 16)
   components:
   - type: Sprite
     layers:
@@ -679,7 +679,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL24APEmpty
-  name: magazine box (AP L24 x 16)
+  name: коробка з магазинами (ББ Л24 х 16)
   components:
   - type: Sprite
     layers:
@@ -724,7 +724,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL24ExtEmpty
-  name: magazine box (Ext L24 x 12)
+  name: коробка з магазинами (Розширені Л24 х 12)
   components:
   - type: Sprite
     layers:
@@ -769,7 +769,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL24HEAPEmpty
-  name: magazine box (HEAP L24 x 16)
+  name: коробка з магазинами (ВБ Л24 х 16)
   components:
   - type: Sprite
     layers:
@@ -814,7 +814,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL24IncendiaryEmpty
-  name: magazine box (Inc L24 x 16)
+  name: коробка з магазинами (Запальні Л24 х 16)
   components:
   - type: Sprite
     layers:
@@ -859,7 +859,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL42AEmpty
-  name: magazine box (L42A x 16)
+  name: коробка з магазинами (Л42А х 16)
   components:
 #  - type: Construction
 #    graph: RMCBoxMagazine
@@ -907,7 +907,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL42AAPEmpty
-  name: magazine box (AP L42A x 16)
+  name: коробка з магазинами (ББ Л42А х 16)
   components:
 #  - type: Construction
 #    graph: RMCBoxMagazine
@@ -955,7 +955,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL42AExtEmpty
-  name: magazine box (Ext L42A x 12)
+  name: коробка з магазинами (Розширені Л42А х 16)
   components:
 #  - type: Construction
 #    graph: RMCBoxMagazine
@@ -1003,8 +1003,8 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxBullets458Empty
-  name: bullet bundle box (.458 SOCOM x 297) # Used to say 300 when it was, infact, not 300 rounds.
-  description: A box of bundled .458 SOCOM rounds.
+  name: коробка набоїв (.458 КОМСО х 297) # Used to say 300 when it was, infact, not 300 rounds.
+  description: Коробка з набоями калібру .458 КОМСО. Використовуються для прямого заряджання в гвинтівку ТМГ-88.
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -1073,7 +1073,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM16Empty
-  name: magazine box (M16 x 12)
+  name: коробка з магазинами (М16 х 12)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -1117,7 +1117,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL83A3Empty
-  name: magazine box (L83A3 x 16)
+  name: коробка з магазинами (Л84А3 х 16)
   components:
   - type: Sprite
     layers:
@@ -1162,7 +1162,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL83A3APEmpty
-  name: magazine box (AP L83A3 x 16)
+  name: коробка з магазинами (ББ Л84А3 х 16)
   components:
   - type: Sprite
     layers:
@@ -1207,7 +1207,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleL83A3ExtEmpty
-  name: magazine box (Ext L83A3 x 12)
+  name: коробка з магазинами (Розширені Л84А3 х 12)
   components:
   - type: Sprite
     layers:
@@ -1252,7 +1252,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleType77Empty
-  name: magazine box (Type 77 x 10)
+  name: коробка з магазинами (Тип 77 х 10)
   components:
   - type: Construction
     graph: RMCBoxMagazine

@@ -65,6 +65,8 @@
   - MRERP
   - MRBanEvasion
   - MRMisinformation
+  - MRMultikey
+  - MRExploits
 
 - type: guideEntry
   parent: MR
@@ -101,6 +103,20 @@
   priority: 5
   text: "/ServerInfo/Guidebook/_Mriya/Rules/ZeroTolerance/Misinformation.xml"
 
+- type: guideEntry
+  parent: MR
+  id: MRMultikey
+  name: mriya-guide-entry-rules-multikey
+  priority: 6
+  text: "/ServerInfo/Guidebook/_Mriya/Rules/ZeroTolerance/Multikey.xml"
+
+- type: guideEntry
+  parent: MR
+  id: MRExploits
+  name: mriya-guide-entry-rules-exploits
+  priority: 7
+  text: "/ServerInfo/Guidebook/_Mriya/Rules/ZeroTolerance/Exploits.xml"
+
 ## Загальні правила
 - type: guideEntry
   parent: MR
@@ -115,8 +131,6 @@
   - MRCommand
   - MRMutinies
   - MRMetaknowledge
-  - MRMultikey
-  - MRExploits
 
 - type: guideEntry
   parent: MR
@@ -155,24 +169,10 @@
 
 - type: guideEntry
   parent: MR
-  id: MRMultikey
-  name: mriya-guide-entry-rules-multikey
-  priority: 6
-  text: "/ServerInfo/Guidebook/_Mriya/Rules/Core/Multikey.xml"
-
-- type: guideEntry
-  parent: MR
   id: MRMutinies
   name: mriya-guide-entry-rules-mutinies
-  priority: 7
+  priority: 6
   text: "/ServerInfo/Guidebook/_Mriya/Rules/Core/Mutinies.xml"
-
-- type: guideEntry
-  parent: MR
-  id: MRExploits
-  name: mriya-guide-entry-rules-exploits
-  priority: 8
-  text: "/ServerInfo/Guidebook/_Mriya/Rules/Core/Exploits.xml"
 
 ## Правила відіграшу
 - type: guideEntry

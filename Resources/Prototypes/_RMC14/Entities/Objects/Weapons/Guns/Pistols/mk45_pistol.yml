@@ -139,7 +139,7 @@
 - type: entity
   parent: CMBulletBase
   id: CMBulletPistolMK45
-#  name: куля (.45) – MR
+#  name: куля (.45) – Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

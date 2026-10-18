@@ -8,4 +8,4 @@ examine-verb-name = Базово
 
 examinable-anchored = Це [color=darkgreen]закріплено[/color] до підлоги.
 
-examinable-unanchored = Це [color=darkred]не закріплено[/color] від підлоги.
+examinable-unanchored = Це [color=darkred]не закріплено[/color] до підлоги.

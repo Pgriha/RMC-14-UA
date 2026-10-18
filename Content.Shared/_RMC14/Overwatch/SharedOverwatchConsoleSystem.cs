@@ -569,9 +569,11 @@ public abstract class SharedOverwatchConsoleSystem : EntitySystem
 
         _adminLog.Add(LogType.RMCMarineAnnounce, $"{ToPrettyString(args.Actor)} sent {squadProto.Name} squad message: {args.Message}");
         _core.CreateARESLog(ent, LogCat, (string)$"{Name(args.Actor)} sent a squad announcement: {args.Message}");
-//        _marineAnnounce.AnnounceSquad($"[color=#3C70FF][bold]Overwatch:[/bold] {Name(args.Actor)} transmits: [font size=16][bold]{message}[/bold][/font][/color]", squadProto.ID); – Mriya. Дубльоване повідомлення від офіційок
-        _marineAnnounce.AnnounceSquad(Loc.GetString("rmc-overwatch-console-announce-message", ("operatorName", Name(args.Actor)), ("message", message)), squadProto.ID);
-
+        // Mriya start
+        var squadColor = CompOrNull<SquadTeamComponent>(squad.Value)?.Color ?? Color.FromHex("#3C70FF");
+        var squadName = Name(squad.Value);
+        _marineAnnounce.AnnounceOverwatchSquad(args.Actor, message, squad.Value, squadColor, squadName);
+        // Mriya end
         var coordinates = TransformSystem.GetMapCoordinates(ent);
         var players = Filter.Empty().AddInRange(coordinates, 12, Player, EntityManager);
         players.RemoveWhereAttachedEntity(HasComp<XenoComponent>);

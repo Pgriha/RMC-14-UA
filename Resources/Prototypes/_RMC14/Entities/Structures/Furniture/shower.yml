@@ -2,7 +2,7 @@
   id: CMShower
   name: душ
   suffix: Пустий
-  description: HS-451. Встановлений у 2050-х роках відділом гігієни компанією ВеЯ.
+  description: ХС-451. Винайдених у 2050-х роках відділом гігієни компанії Вестон-Ямада.
   placement:
     mode: SnapgridCenter
   components:

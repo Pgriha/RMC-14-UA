@@ -173,7 +173,7 @@
 
 - type: entity
   id: RMCCartridgeRevolver44Marksman
-  name: набій (.44)
+  name: набій (.44 для точної стрільби)
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -186,7 +186,7 @@
 - type: entity
   parent: CMBulletBase
   id: CMBulletRevolver44
-#  name: куля (.44) – MR
+#  name: куля (.44)– Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -201,7 +201,7 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletRevolver44Marksman
-#  name: куля (.44 для точної стрільби) – MR
+#  name: куля (.44 для точної стрільби)– Mriya
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

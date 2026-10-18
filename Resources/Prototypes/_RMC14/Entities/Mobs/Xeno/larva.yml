@@ -48,7 +48,7 @@
     plasma: 10
     maxPlasma: 10
     plasmaRegenOnWeeds: 0.1
-#  - type: RMCGibOnDeath – MR
+#  - type: RMCGibOnDeath – Mriya
 #    gibChance: 0.25
   - type: RMCSpawnEntitiesOnGib
     entities:

@@ -74,6 +74,7 @@
   - type: RMCMesonsNonviewable
   - type: Tag
     tags:
+    - AllowXenoConstruction # Mriya. Можливість будувати на них
     - Structure
     - WindowFrame
 

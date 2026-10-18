@@ -5,6 +5,12 @@
   suffix: Right Output
   description: Спеціальна версія автостату для друкування медичного приладдя.
   components:
+  # Mriya start. Можливість будувати на ньому
+  - type: Tag
+    tags:
+    - Structure
+    - AllowXenoConstruction
+  # Mriya end
   - type: ApcPowerReceiver
     powerLoad: 0
     needsPower: false

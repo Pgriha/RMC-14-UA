@@ -123,7 +123,7 @@
 - type: entity
   parent: CMXenoPraetorianBase
   id: CMXenoPraetorian
-  description: Велика й небезпечна чужопланетна істота, у якої на шиї велика кислотна почка. Видається досить універсальною. # Mriya
+  description: Велика й небезпечна чужопланетна істота, у якої на шиї велика кислотна брунька. Видається досить універсальною. # Mriya
   components:
   - type: MriyaOldSprite # Mriya. Старі/наші версії спрайтів
     normalSprite: _RMC14/Mobs/Xenonids/Praetorian/praetorian.rsi

@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: RMCFuelPump
-  name: fuel pump
-  description: It is a machine that pumps fuel around the ship.
+  name: паливний насос
+  description: Величезний насос, який закачує паливо у евакуаційні поди та шатли. Активується тільки під час аварійних ситуацій. Тримайте його заживленим, щоб він продовжував працювати!
   placement:
     mode: SnapgridCenter
   components:

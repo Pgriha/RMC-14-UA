@@ -1,4 +1,5 @@
 ﻿using Content.Shared._RMC14.Animations;
+using Content.Shared._RMC14.Atmos; //Mriya. Аби пілон розрізняв вогонь. 
 using Content.Shared._RMC14.Marines;
 using Content.Shared._RMC14.Xenonids.Construction.Nest;
 using Content.Shared._RMC14.Xenonids.Hive;
@@ -27,6 +28,7 @@ public sealed class AcidPillarSystem : EntitySystem
 
     private readonly HashSet<Entity<MarineComponent>> _marines = new();
     private readonly HashSet<Entity<XenoComponent>> _xenos = new();
+    private readonly HashSet<Entity<TileFireComponent>> _fires = new(); //Mriya. Аби пілон атакував вогонь. 
 
     private bool CanTarget(EntityUid pillar, EntityUid target)
     {
@@ -98,6 +100,28 @@ public sealed class AcidPillarSystem : EntitySystem
                 TrySetIfCloserTarget(ref closest, uid, xeno, pillarCoords);
             }
 
+        //Mriya start
+            if (closest.Ent == default)
+            {
+                _fires.Clear();
+                _entityLookup.GetEntitiesInRange(pillarCoords, comp.Range, _fires, LookupFlags.Uncontained);
+
+                (EntityUid Ent, float Range) closestFire = (default, float.MaxValue);
+                foreach (var fire in _fires)
+                {
+                    var targetCoords = _transform.GetMoverCoordinates(fire);
+                    if (!pillarCoords.TryDistance(EntityManager, targetCoords, out var distance) ||
+                        distance >= closestFire.Range)
+                    {
+                        continue;
+                    }
+
+                    closestFire = (fire, distance);
+                }
+
+                closest = closestFire;
+            }
+        //Mriya end
             if (closest.Ent == default)
                 continue;
 

@@ -1,0 +1,10 @@
+# Ported from Colonial Marines Universe (https://github.com/AU-14/ColonialMarinesUniverse), licensed under AGPL-3.0.
+- type: shader
+  id: CMUMarineAnnouncementGrid
+  kind: source
+  path: "/Textures/_CMU14/Shaders/marine_announce_grid.swsl"
+  params:
+    tile_size: 3, 3
+    line_thickness: 0.5
+    grid_color: "#4A9EFF66"
+    scroll_speed: 12.0

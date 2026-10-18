@@ -850,8 +850,8 @@
 - type: entity
   parent: CMSatchel
   id: RMCBackpackRTOPMCBroken
-  name: broken We-Ya radio telephone pack
-  description: A heavy-duty extended-pack, used for telecommunications between central command. Commonly carried by RTOs. This one bears the logo of Weston-Yamada and internal systems seem to be completely fried and broken.
+  name: зламаний радіотелефонний рюкзак Ве-Я
+  description: Міцний переносний рюкзак, призначений для зв'язку з іншими радіостанціями. Зазвичай використовується зв'язківцями. Конкретно ця модель має логотип Вестон-Ямада, але її внутрощі перетворилися на спалену кашу з електроніки.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/rto.rsi
@@ -914,8 +914,8 @@
 - type: entity
   parent: RMCBackpackRTO
   id: RMCBackpackRTOWEYABagPhone
-  name: WEYA T70 portable bag phone
-  description: The T70 is the latest and greatest in portable telephone technology for the consumer market. Often seen on Corporate Executives, day-traders, and those who require a quick-dial to the buisness world.
+  name: радіотелефонна сумка Ве-Я Т70
+  description: Т70 – це найновіша та найкраща портативна телефонна технологія для споживчого ринку. Часто її носять керівники компаній, підприємці, що займаються торгівлею, та ті, кому потрібен швидкий зв'язок зі світом бізнесу.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Satchels/PMC/bag_phone.rsi
@@ -946,8 +946,8 @@
 - type: entity
   parent: RMCBackpackRTO
   id: RMCBackpackRTOBagPhone
-  name: RT-8000 portable bag phone
-  description: A fairly basic satchel with a phone attached to it, containing an interior battery for continued use. This model is fairly old, and has seen reproduction by practically every technology corporation around since the patent expired.
+  name: портативний телефон-сумка РТ-8000
+  description: Досить проста сумка з прикріпленим до неї телефоном, що містить внутрішню батарею для тривалого використання. Ця модель досить стара й з моменту закінчення терміну дії патенту її відтворювали практично всі технологічні корпорації.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Satchels/Civilians/bag_phone.rsi

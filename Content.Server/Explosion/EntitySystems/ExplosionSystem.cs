@@ -4,9 +4,10 @@ using Content.Server.Administration.Logs;
 using Content.Server.Atmos.Components;
 using Content.Server.NodeContainer.EntitySystems;
 using Content.Server.NPC.Pathfinding;
+using Content.Shared._RMC14.CameraShake; // Mriya. Тряска вибухів через RMC-систему
 using Content.Shared._RMC14.Explosion;
 using Content.Shared.Atmos.Components;
-using Content.Shared.Camera;
+//using Content.Shared.Camera;
 using Content.Shared.CCVar;
 using Content.Shared.Damage;
 using Content.Shared.Database;
@@ -45,7 +46,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly NodeGroupSystem _nodeGroupSystem = default!;
     [Dependency] private readonly PathfindingSystem _pathfindingSystem = default!;
-    [Dependency] private readonly SharedCameraRecoilSystem _recoilSystem = default!;
+    [Dependency] private readonly RMCCameraShakeSystem _rmcCameraShake = default!; // Mriya. Для тряски вибухів. В оригіналі SharedCameraRecoilSystem _recoilSystem
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly ThrowingSystem _throwingSystem = default!;
     [Dependency] private readonly PvsOverrideSystem _pvsSys = default!;
@@ -347,8 +348,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
 
         var visualEnt = CreateExplosionVisualEntity(pos, queued.Proto.ID, spaceMatrix, spaceData, gridData.Values, iterationIntensity);
 
-        // camera shake
-        CameraShake(iterationIntensity.Count * 4f, pos, queued.TotalIntensity);
+        CameraShake(pos, queued.TotalIntensity);        // Mriya. Тряска екрану від вибуху. В оригіналі CameraShake(iterationIntensity.Count * 4f, pos, queued.TotalIntensity)
 
         //For whatever bloody reason, sound system requires ENTITY coordinates.
         var mapEntityCoords = _transformSystem.ToCoordinates(_mapSystem.GetMap(pos.MapId), pos);
@@ -399,10 +399,29 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
             queued.Cause,
             _map);
     }
-
-    private void CameraShake(float range, MapCoordinates epicenter, float totalIntensity)
+    // Mriya start. Аби при вибуху екран трясло, чим сильніше вибух тим сильніше трясіння. В оригіналі метод був заглушений return
+    private void CameraShake(MapCoordinates epicenter, float totalIntensity)
     {
-        return;
+        // Ігнорування малих вибухів.
+        if (totalIntensity < 20)
+            return;
+
+        var sqrt = MathF.Sqrt(totalIntensity);
+
+        // Наскільки далеко. Гранати ~20 тайлів, артилерія ~30, КАС ~50, ОБ ~150.
+        var range = 15f + sqrt * 0.6f;
+        if (range > 200f)
+            range = 200f;
+
+        // Сила. Ганати ~8/3, палив ~6/3, арта ~12/5, КАС ~21/7, ОБ 30/10.
+        var baseShakes = 3 + sqrt / 3f;
+        if (baseShakes > 30)
+            baseShakes = 30;
+
+        var baseStrength = 2 + sqrt / 10f;
+        if (baseStrength > 10)
+            baseStrength = 10;
+    // Mriya end
         var players = Filter.Empty();
         players.AddInRange(epicenter, range, _playerManager, EntityManager);
 
@@ -412,15 +431,16 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
                 continue;
 
             var playerPos = _transformSystem.GetWorldPosition(player.AttachedEntity!.Value);
-            var delta = epicenter.Position - playerPos;
+    // Mriya start
+            var distance = (epicenter.Position - playerPos).Length();
+            var falloff = 1 - distance / range;
+            if (falloff <= 0)
+                continue;
 
-            if (delta.EqualsApprox(Vector2.Zero))
-                delta = new(0.01f, 0);
-
-            var distance = delta.Length();
-            var effect = 5 * MathF.Pow(totalIntensity, 0.5f) * (1 - distance / range);
-            if (effect > 0.01f)
-                _recoilSystem.KickCamera(uid, -delta.Normalized() * effect);
+            var shakes = Math.Max(1, (int)Math.Round(baseShakes * falloff));
+            var strength = Math.Max(1, (int)Math.Round(baseStrength * falloff));
+            _rmcCameraShake.ShakeCamera(uid, shakes, strength);
         }
     }
+    // Mriya end
 }

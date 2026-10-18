@@ -405,7 +405,7 @@
 
 # Pilot Officer
 - type: entity
-  parent: [ RMCBaseJacketButtonable, RMCAllowSuitStorageClothingExternalWebbing ] # Mriya. Додано RMCAllowSuitStorageClothingExternalWebbing. Щоб можна було вішати зброю
+  parent: [ RMCAllowSuitStorageClothingArmorVest, RMCBaseJacketButtonable ] # Mriya. Додано RMCAllowSuitStorageClothingArmorVest. Щоб можна було вішати зброю
   id: RMCCoatPilot
   name: легкий бронежилет зразка М70Б1
   description: Надлегкий бронежилет, який використовують пілоти шатлів для базового захисту та, певно, стилю під час пілотування. Його проєктувальники явно більше думали про друге, тож захист у нього майже відсутній. Будьте обережні та не попадіть під кулі!
@@ -422,9 +422,19 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/pilot.rsi
   - type: CMArmor
     melee: 10
+    bullet: 10 # Mriya
   - type: FoldableClothing
     foldedEquippedPrefix: jacket
     foldedHeldPrefix: jacket
+  # Mriya start
+  - type: RemoveComponents
+    components:
+    - type: RMCAllowSuitStorageUserWhitelist
+      allowedWhitelist: RMCAllowSuitStorageClothingJacket
+      user:
+        components:
+        - RMCAllowSuitStorage
+  # Mriya end
 
 # Commanding Officer
 - type: entity
