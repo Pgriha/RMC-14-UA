@@ -140,7 +140,7 @@
     - neck
   - type: IntelRetrieveItemObjective # Mriya, бо морпіхи - це важливо
     state: Active
-    value: 0.4 # х2 від трупу колоніста
+    value: 0.5 # х2.5 від трупу колоніста або як миша
 
 - type: entity
   id: RMCDogtagProp
